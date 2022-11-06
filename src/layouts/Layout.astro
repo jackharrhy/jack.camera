@@ -18,11 +18,25 @@ const { title } = Astro.props;
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://rsms.me/" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <title>{title}</title>
+    <title>jack.camera - {title}</title>
   </head>
   <body>
     <slot />
     <style is:global>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        margin: 0;
+      }
+
       :root {
         font-family: "Inter", sans-serif;
       }

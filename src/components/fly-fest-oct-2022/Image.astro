@@ -1,0 +1,18 @@
+---
+const imgBase = "https://files.jack.camera/fly-fest-oct2022";
+
+const { key, ext, variant = "small", class: klass } = Astro.props;
+
+const middle = variant === "small" ? ".small." : ".";
+---
+
+<a
+  href={`/fly-fest-oct2022/${key.replace("/", "-")}`}
+  style="display: contents;"
+>
+  <img
+    src={`${imgBase}/${key}${middle}${ext ?? "jpg"}`}
+    loading="lazy"
+    class={klass}
+  />
+</a>

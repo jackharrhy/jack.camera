@@ -1,0 +1,88 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import info from "../../info.json";
+
+export function getStaticPaths() {
+  function toFraction(x: number, tolerance: number = 0.0001) {
+    if (x === 0) return [0, 1];
+    if (x < 0) x = -x;
+
+    let num = 1;
+    let den = 1;
+
+    const iterate = () => {
+      const R = num / den;
+      if (Math.abs((R - x) / x) < tolerance) return;
+
+      if (R < x) {
+        num++;
+      } else {
+        den++;
+      }
+
+      iterate();
+    };
+
+    iterate();
+    return `${num}/${den}`;
+  }
+  const { assets, photos } = info.pages["fly-fest-oct2022"];
+
+  const assetPaths = Object.entries(assets).map(([key, { src }]) => ({
+    params: {
+      key: `assets-${key}`,
+    },
+    props: {
+      src,
+    },
+  }));
+
+  const photoPaths = Object.entries(photos).map(([key, photo]) => ({
+    params: {
+      key,
+    },
+    props: {
+      src: photo.src,
+      about: `${photo.make} ${photo.model} / ISO ${photo.iso} / f${
+        photo.f_stop
+      } / ${photo.focal_length}mm / ${toFraction(photo.exposure_time)}s`,
+    },
+  }));
+
+  return [...assetPaths, ...photoPaths];
+}
+
+const { key } = Astro.params;
+const { src, about } = Astro.props;
+
+const imgBase = "https://files.jack.camera/fly-fest-oct2022";
+const ext = (src as string).split(".")[1];
+---
+
+<Layout title={`fly fest - ${key}`}>
+  <main>
+    <img
+      src={`${imgBase}/${(key as string).replace("assets-", "assets/")}.${ext}`}
+      loading="lazy"
+    />
+    {about && <p>{about}</p>}
+  </main>
+</Layout>
+
+<style is:global>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  img {
+    margin: 0 auto;
+    max-height: 80vh;
+  }
+</style>
