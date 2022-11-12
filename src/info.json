@@ -1,0 +1,576 @@
+{
+  "pages": {
+    "fly-fest-oct2022": {
+      "title": "Fly Festival - October 2022",
+      "date": "2022-10-29",
+      "location": "local:./data/fly-fest-oct2022",
+      "photos": {
+        "poster-on-pole": {
+          "src": "DSCF9730.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 4.5,
+          "focal_length": 56.0,
+          "exposure_time": 0.0014705882352941176
+        },
+        "andrew-vert-flare": {
+          "src": "DSCF9735.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.000588235294117647
+        },
+        "andrew-vert-flare-alt": {
+          "src": "DSCF9741.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.0004
+        },
+        "dino": {
+          "src": "DSCF9766.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 10.0,
+          "focal_length": 50.5,
+          "exposure_time": 0.0125
+        },
+        "andrew-crowd-front": {
+          "src": "DSCF9768.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 10.0,
+          "focal_length": 18.0,
+          "exposure_time": 0.022222222222222223
+        },
+        "andrew-crowd-side": {
+          "src": "DSCF9774.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 6.4,
+          "focal_length": 22.3,
+          "exposure_time": 0.008
+        },
+        "andrew-front": {
+          "src": "DSCF9799.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.00025
+        },
+        "greta-setup": {
+          "src": "DSCF9801.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 4.5,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "greta-christian-vert": {
+          "src": "DSCF9828.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.0005
+        },
+        "greta-herself-vert": {
+          "src": "DSCF9829.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.0005
+        },
+        "greta-herself-front": {
+          "src": "DSCF9855.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.0005
+        },
+        "greta-christian-front": {
+          "src": "DSCF9856.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.001
+        },
+        "greta-aidan-sing-keeb": {
+          "src": "DSCF9858.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.001
+        },
+        "greta-raine-vert": {
+          "src": "DSCF9871.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.00025
+        },
+        "greta-aidan-vert": {
+          "src": "DSCF9887.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.0005
+        },
+        "greta-crowd": {
+          "src": "DSCF9894.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.0,
+          "focal_length": 21.4,
+          "exposure_time": 0.004
+        },
+        "greta-crowd-zoom": {
+          "src": "DSCF9902.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 4.5,
+          "focal_length": 48.4,
+          "exposure_time": 0.004
+        },
+        "greta-crowd-behind": {
+          "src": "DSCF9936.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 55.0,
+          "exposure_time": 0.008
+        },
+        "greta-crowd-behind-flare": {
+          "src": "DSCF9939.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 18.0,
+          "exposure_time": 0.008
+        },
+        "zombie-crowd-1": {
+          "src": "DSCF9959.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 34.3,
+          "exposure_time": 0.008
+        },
+        "zombie-crowd-2": {
+          "src": "DSCF9969.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 18.0,
+          "exposure_time": 0.008
+        },
+        "zombie-closeup": {
+          "src": "DSCF0026.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 18.0,
+          "exposure_time": 0.008
+        },
+        "zombie-dead": {
+          "src": "DSCF0042.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 28.9,
+          "exposure_time": 0.008
+        },
+        "cuperos-front-setup": {
+          "src": "DSCF0047.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 5.6,
+          "focal_length": 46.3,
+          "exposure_time": 0.008
+        },
+        "cuperos-side": {
+          "src": "DSCF0060.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 4.0,
+          "focal_length": 55.0,
+          "exposure_time": 0.008
+        },
+        "cuperos-francis-keeb": {
+          "src": "DSCF0077.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "cuperos-francis-keeb-closer": {
+          "src": "DSCF0079.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.4,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "cuperos-nadia": {
+          "src": "DSCF0102.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.002
+        },
+        "cuperos-front-playing": {
+          "src": "DSCF0128.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "cuperos-james-with-knobs-vert": {
+          "src": "DSCF0132.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "cuperos-james-with-knobs": {
+          "src": "DSCF0145.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "cuperos-nadia-vert": {
+          "src": "DSCF0149.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "cuperos-side-alt": {
+          "src": "DSCF0167.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 250,
+          "f_stop": 2.8,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "cayley-and-emma": {
+          "src": "DSCF0179.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.002
+        },
+        "stickers": {
+          "src": "DSCF0181.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.002
+        },
+        "lexi-herself-setup": {
+          "src": "DSCF0192.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.002
+        },
+        "lexi-chris-setup": {
+          "src": "DSCF0210.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "lexi-chris-setup-behind": {
+          "src": "DSCF0213.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "lexi-setup": {
+          "src": "DSCF0221.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "lexi-aidan-setup": {
+          "src": "DSCF0239.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.004
+        },
+        "lexi-front": {
+          "src": "DSCF0287.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 4.0,
+          "focal_length": 55.0,
+          "exposure_time": 0.008
+        },
+        "lexi-side": {
+          "src": "DSCF0316.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 4.0,
+          "focal_length": 46.3,
+          "exposure_time": 0.008
+        },
+        "lexi-raine": {
+          "src": "DSCF0350.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "lexi-front-darker": {
+          "src": "DSCF0362.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "weary-side": {
+          "src": "DSCF0405.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 250,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "weary-christopher-side": {
+          "src": "DSCF0412.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 250,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "weary-christopher-front": {
+          "src": "DSCF0421.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 250,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "weary-kate-front": {
+          "src": "DSCF0423.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 250,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "weary-meg": {
+          "src": "DSCF0441.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 250,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "weary-front": {
+          "src": "DSCF0450.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-james-front": {
+          "src": "DSCF0455.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.4,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-raine-front": {
+          "src": "DSCF0470.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-james-flare": {
+          "src": "DSCF0475.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-nick": {
+          "src": "DSCF0488.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-raine-side": {
+          "src": "DSCF0491.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-front": {
+          "src": "DSCF0509.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-side": {
+          "src": "DSCF0512.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-nick-alt": {
+          "src": "DSCF0535.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-james-sing-front": {
+          "src": "DSCF0550.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "planes-side-alt": {
+          "src": "DSCF0598.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        },
+        "organizers": {
+          "src": "DSCF0611.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008
+        }
+      },
+      "assets": {
+        "cd-andrew-smith": { "src": "assets/cd-andrew-smith.jpg" },
+        "cd-cuperos": { "src": "assets/cd-cuperos.jpg" },
+        "cd-greta": { "src": "assets/cd-greta.jpg" },
+        "cd-lexi": { "src": "assets/cd-lexi.jpg" },
+        "cd-planes": { "src": "assets/cd-planes.jpg" },
+        "cd-weary": { "src": "assets/cd-weary.jpg" },
+        "overall-wellness": { "src": "assets/overall-wellness.png" },
+        "porta-fly-fest": { "src": "assets/porta-fly-fest.png" },
+        "poster-alt": { "src": "assets/poster-alt.jpg" },
+        "poster": { "src": "assets/poster.png" },
+        "trading": { "src": "assets/trading.png" },
+        "flyfest-overall-wellness-wallpaper": {
+          "src": "assets/flyfest-overall-wellness-wallpaper.png"
+        }
+      }
+    }
+  }
+}

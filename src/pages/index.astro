@@ -2,15 +2,30 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="jack.camera">
+<Layout title="home">
   <main>
     <h1>jack.camera</h1>
+    <ul>
+      <a href="./fly-fest-oct2022">
+        <li>Fly Festival - October 2022</li>
+      </a>
+    </ul>
   </main>
 </Layout>
 
 <style is:global>
-  h1 {
+  body {
+    justify-content: center;
+  }
+  main {
     text-align: center;
-    font-size: 4rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  li {
+    font-size: 3rem;
   }
 </style>
