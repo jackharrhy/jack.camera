@@ -30,8 +30,10 @@ const imgBase = "https://files.jack.camera/fly-fest-oct2022";
       <p>NOTICE!</p>
     </div>
     <div class="section double posters">
-      <Image key="assets/poster-alt" />
-      <Image key="poster-on-pole" />
+      <div>
+        <Image key="assets/poster-alt" />
+        <Image key="poster-on-pole" />
+      </div>
     </div>
     <div class="cd">
       <Image key="assets/cd-andrew-smith" variant="full" />
@@ -359,7 +361,7 @@ const imgBase = "https://files.jack.camera/fly-fest-oct2022";
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    max-height: 60vh;
   }
 
   .insert img {
@@ -377,12 +379,11 @@ const imgBase = "https://files.jack.camera/fly-fest-oct2022";
 
   .posters {
     background-color: #191c1d;
+    padding: 4rem;
   }
 
   .posters img {
-    padding: 0 3rem;
-    height: 80%;
-    max-width: 50%;
+    aspect-ratio: 2.5/4;
   }
 
   .double img {
@@ -511,7 +512,7 @@ const imgBase = "https://files.jack.camera/fly-fest-oct2022";
       flex-direction: column;
     }
     .sparkles img {
-      height: 75%;
+      max-height: 75%;
     }
     .double {
       flex-direction: column;
