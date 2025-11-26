@@ -5,7 +5,7 @@ import subprocess
 
 import typer
 import toml
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from exif import Image
 
 
@@ -27,8 +27,8 @@ class Page(BaseModel):
     title: str
     date: str
     location: str
-    photos: Dict[str, Photo]
-    assets: Dict[str, Asset]
+    photos: Dict[str, Photo] = Field(default_factory=dict)
+    assets: Dict[str, Asset] = Field(default_factory=dict)
 
 
 class Info(BaseModel):

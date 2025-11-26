@@ -3,210 +3,125 @@ title = "Fly Festival - October 2022"
 date = "2022-10-29"
 location = "local:./data/fly-fest-oct2022"
 
-[pages.fly-fest-oct2022.assets.cd-andrew-smith]
-src = "assets/cd-andrew-smith.jpg"
-[pages.fly-fest-oct2022.assets.cd-cuperos]
-src = "assets/cd-cuperos.jpg"
-[pages.fly-fest-oct2022.assets.cd-greta]
-src = "assets/cd-greta.jpg"
-[pages.fly-fest-oct2022.assets.cd-lexi]
-src = "assets/cd-lexi.jpg"
-[pages.fly-fest-oct2022.assets.cd-planes]
-src = "assets/cd-planes.jpg"
-[pages.fly-fest-oct2022.assets.cd-weary]
-src = "assets/cd-weary.jpg"
-[pages.fly-fest-oct2022.assets.overall-wellness]
-src = "assets/overall-wellness.png"
-[pages.fly-fest-oct2022.assets.porta-fly-fest]
-src = "assets/porta-fly-fest.png"
-[pages.fly-fest-oct2022.assets.poster-alt]
-src = "assets/poster-alt.jpg"
-[pages.fly-fest-oct2022.assets.poster]
-src = "assets/poster.png"
-[pages.fly-fest-oct2022.assets.trading]
-src = "assets/trading.png"
-[pages.fly-fest-oct2022.assets.flyfest-overall-wellness-wallpaper]
-src = "assets/flyfest-overall-wellness-wallpaper.png"
+[pages.fly-fest-oct2022.assets]
+cd-andrew-smith = { src = "assets/cd-andrew-smith.jpg" }
+cd-cuperos = { src = "assets/cd-cuperos.jpg" }
+cd-greta = { src = "assets/cd-greta.jpg" }
+cd-lexi = { src = "assets/cd-lexi.jpg" }
+cd-planes = { src = "assets/cd-planes.jpg" }
+cd-weary = { src = "assets/cd-weary.jpg" }
+overall-wellness = { src = "assets/overall-wellness.png" }
+porta-fly-fest = { src = "assets/porta-fly-fest.png" }
+poster-alt = { src = "assets/poster-alt.jpg" }
+poster = { src = "assets/poster.png" }
+trading = { src = "assets/trading.png" }
+flyfest-overall-wellness-wallpaper = { src = "assets/flyfest-overall-wellness-wallpaper.png" }
 
-[pages.fly-fest-oct2022.photos.poster-on-pole]
-src = "DSCF9730.jpg"
+[pages.fly-fest-oct2022.photos]
+poster-on-pole = { src = "DSCF9730.jpg" }
+andrew-vert-flare = { src = "DSCF9735.jpg" }
+andrew-vert-flare-alt = { src = "DSCF9741.jpg" }
+dino = { src = "DSCF9766.jpg" }
+andrew-crowd-front = { src = "DSCF9768.jpg" }
+andrew-crowd-side = { src = "DSCF9774.jpg" }
+andrew-front = { src = "DSCF9799.jpg" }
+greta-setup = { src = "DSCF9801.jpg" }
+greta-christian-vert = { src = "DSCF9828.jpg" }
+greta-herself-vert = { src = "DSCF9829.jpg" }
+greta-herself-front = { src = "DSCF9855.jpg" }
+greta-christian-front = { src = "DSCF9856.jpg" }
+greta-aidan-sing-keeb = { src = "DSCF9858.jpg" }
+greta-raine-vert = { src = "DSCF9871.jpg" }
+greta-aidan-vert = { src = "DSCF9887.jpg" }
+greta-crowd = { src = "DSCF9894.jpg" }
+greta-crowd-zoom = { src = "DSCF9902.jpg" }
+greta-crowd-behind = { src = "DSCF9936.jpg" }
+greta-crowd-behind-flare = { src = "DSCF9939.jpg" }
+zombie-crowd-1 = { src = "DSCF9959.jpg" }
+zombie-crowd-2 = { src = "DSCF9969.jpg" }
+zombie-closeup = { src = "DSCF0026.jpg" }
+zombie-dead = { src = "DSCF0042.jpg" }
+cuperos-front-setup = { src = "DSCF0047.jpg" }
+cuperos-side = { src = "DSCF0060.jpg" }
+cuperos-francis-keeb = { src = "DSCF0077.jpg" }
+cuperos-francis-keeb-closer = { src = "DSCF0079.jpg" }
+cuperos-nadia = { src = "DSCF0102.jpg" }
+cuperos-front-playing = { src = "DSCF0128.jpg" }
+cuperos-james-with-knobs-vert = { src = "DSCF0132.jpg" }
+cuperos-james-with-knobs = { src = "DSCF0145.jpg" }
+cuperos-nadia-vert = { src = "DSCF0149.jpg" }
+cuperos-side-alt = { src = "DSCF0167.jpg" }
+cayley-and-emma = { src = "DSCF0179.jpg" }
+stickers = { src = "DSCF0181.jpg" }
+lexi-herself-setup = { src = "DSCF0192.jpg" }
+lexi-chris-setup = { src = "DSCF0210.jpg" }
+lexi-chris-setup-behind = { src = "DSCF0213.jpg" }
+lexi-setup = { src = "DSCF0221.jpg" }
+lexi-aidan-setup = { src = "DSCF0239.jpg" }
+lexi-front = { src = "DSCF0287.jpg" }
+lexi-side = { src = "DSCF0316.jpg" }
+lexi-raine = { src = "DSCF0350.jpg" }
+lexi-front-darker = { src = "DSCF0362.jpg" }
+weary-side = { src = "DSCF0405.jpg" }
+weary-christopher-side = { src = "DSCF0412.jpg" }
+weary-christopher-front = { src = "DSCF0421.jpg" }
+weary-kate-front = { src = "DSCF0423.jpg" }
+weary-meg = { src = "DSCF0441.jpg" }
+weary-front = { src = "DSCF0450.jpg" }
+planes-james-front = { src = "DSCF0455.jpg" }
+planes-raine-front = { src = "DSCF0470.jpg" }
+planes-james-flare = { src = "DSCF0475.jpg" }
+planes-nick = { src = "DSCF0488.jpg" }
+planes-raine-side = { src = "DSCF0491.jpg" }
+planes-front = { src = "DSCF0509.jpg" }
+planes-side = { src = "DSCF0512.jpg" }
+planes-nick-alt = { src = "DSCF0535.jpg" }
+planes-james-sing-front = { src = "DSCF0550.jpg" }
+planes-side-alt = { src = "DSCF0598.jpg" }
+organizers = { src = "DSCF0611.jpg" }
 
-[pages.fly-fest-oct2022.photos.andrew-vert-flare]
-src = "DSCF9735.jpg"
+[pages.demo-night-2-nov2025]
+title = "Demo Night 2 - November 2025"
+date = "2025-11-02"
+location = "local:./data/demo-night-2-nov2025"
 
-[pages.fly-fest-oct2022.photos.andrew-vert-flare-alt]
-src = "DSCF9741.jpg"
-
-[pages.fly-fest-oct2022.photos.dino]
-src = "DSCF9766.jpg"
-
-[pages.fly-fest-oct2022.photos.andrew-crowd-front]
-src = "DSCF9768.jpg"
-
-[pages.fly-fest-oct2022.photos.andrew-crowd-side]
-src = "DSCF9774.jpg"
-
-[pages.fly-fest-oct2022.photos.andrew-front]
-src = "DSCF9799.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-setup]
-src = "DSCF9801.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-christian-vert]
-src = "DSCF9828.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-herself-vert]
-src = "DSCF9829.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-herself-front]
-src = "DSCF9855.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-christian-front]
-src = "DSCF9856.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-aidan-sing-keeb]
-src = "DSCF9858.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-raine-vert]
-src = "DSCF9871.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-aidan-vert]
-src = "DSCF9887.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-crowd]
-src = "DSCF9894.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-crowd-zoom]
-src = "DSCF9902.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-crowd-behind]
-src = "DSCF9936.jpg"
-
-[pages.fly-fest-oct2022.photos.greta-crowd-behind-flare]
-src = "DSCF9939.jpg"
-
-[pages.fly-fest-oct2022.photos.zombie-crowd-1]
-src = "DSCF9959.jpg"
-
-[pages.fly-fest-oct2022.photos.zombie-crowd-2]
-src = "DSCF9969.jpg"
-
-[pages.fly-fest-oct2022.photos.zombie-closeup]
-src = "DSCF0026.jpg"
-
-[pages.fly-fest-oct2022.photos.zombie-dead]
-src = "DSCF0042.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-front-setup]
-src = "DSCF0047.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-side]
-src = "DSCF0060.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-francis-keeb]
-src = "DSCF0077.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-francis-keeb-closer]
-src = "DSCF0079.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-nadia]
-src = "DSCF0102.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-front-playing]
-src = "DSCF0128.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-james-with-knobs-vert]
-src = "DSCF0132.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-james-with-knobs]
-src = "DSCF0145.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-nadia-vert]
-src = "DSCF0149.jpg"
-
-[pages.fly-fest-oct2022.photos.cuperos-side-alt]
-src = "DSCF0167.jpg"
-
-[pages.fly-fest-oct2022.photos.cayley-and-emma]
-src = "DSCF0179.jpg"
-
-[pages.fly-fest-oct2022.photos.stickers]
-src = "DSCF0181.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-herself-setup]
-src = "DSCF0192.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-chris-setup]
-src = "DSCF0210.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-chris-setup-behind]
-src = "DSCF0213.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-setup]
-src = "DSCF0221.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-aidan-setup]
-src = "DSCF0239.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-front]
-src = "DSCF0287.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-side]
-src = "DSCF0316.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-raine]
-src = "DSCF0350.jpg"
-
-[pages.fly-fest-oct2022.photos.lexi-front-darker]
-src = "DSCF0362.jpg"
-
-[pages.fly-fest-oct2022.photos.weary-side]
-src = "DSCF0405.jpg"
-
-[pages.fly-fest-oct2022.photos.weary-christopher-side]
-src = "DSCF0412.jpg"
-
-[pages.fly-fest-oct2022.photos.weary-christopher-front]
-src = "DSCF0421.jpg"
-
-[pages.fly-fest-oct2022.photos.weary-kate-front]
-src = "DSCF0423.jpg"
-
-[pages.fly-fest-oct2022.photos.weary-meg]
-src = "DSCF0441.jpg"
-
-[pages.fly-fest-oct2022.photos.weary-front]
-src = "DSCF0450.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-james-front]
-src = "DSCF0455.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-raine-front]
-src = "DSCF0470.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-james-flare]
-src = "DSCF0475.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-nick]
-src = "DSCF0488.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-raine-side]
-src = "DSCF0491.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-front]
-src = "DSCF0509.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-side]
-src = "DSCF0512.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-nick-alt]
-src = "DSCF0535.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-james-sing-front]
-src = "DSCF0550.jpg"
-
-[pages.fly-fest-oct2022.photos.planes-side-alt]
-src = "DSCF0598.jpg"
-
-[pages.fly-fest-oct2022.photos.organizers]
-src = "DSCF0611.jpg"
+[pages.demo-night-2-nov2025.photos]
+faiaz-pizza = { src = "DSCF0837.jpg" }
+denny-intro-1 = { src = "DSCF0857.jpg" }
+denny-intro-2 = { src = "DSCF0859.jpg" }
+dan-listening = { src = "DSCF0863.jpg" }
+rowan-locked-in = { src = "DSCF0865.jpg" }
+riley-with-brainz = { src = "DSCF0867.jpg" }
+riley-shout = { src = "DSCF0871.jpg" }
+riley-and-spaghetti = { src = "DSCF0874.jpg" }
+locked-in-onlookers = { src = "DSCF0877.jpg" }
+thomas-presenting-1 = { src = "DSCF0883.jpg" }
+thomas-presenting-2 = { src = "DSCF0886.jpg" }
+faiaz-presenting = { src = "DSCF0904.jpg" }
+pensive-amin = { src = "DSCF0908.jpg" }
+honour-presenting-1 = { src = "DSCF0918.jpg" }
+honour-presenting-2 = { src = "DSCF0921.jpg" }
+more-pensive = { src = "DSCF0926.jpg" }
+amin-presenting-1 = { src = "DSCF0932.jpg" }
+amin-presenting-2 = { src = "DSCF0934.jpg" }
+natalie-perched = { src = "DSCF0940.jpg" }
+nick-presenting-1 = { src = "DSCF0943.jpg" }
+nick-presenting-2 = { src = "DSCF0948.jpg" }
+focused-onlookers = { src = "DSCF0954.jpg" }
+denny-listening = { src = "DSCF0955.jpg" }
+alex-presenting-1 = { src = "DSCF0972.jpg" }
+alex-presenting-2 = { src = "DSCF0976.jpg" }
+fume-presenting-1 = { src = "DSCF0992.jpg" }
+fume-presenting-2 = { src = "DSCF0997.jpg" }
+leah-listening = { src = "DSCF1015.jpg" }
+natalie-presenting-1 = { src = "DSCF1026.jpg" }
+natalie-presenting-2 = { src = "DSCF1030.jpg" }
+evan-presenting-1 = { src = "DSCF1034.jpg" }
+evan-presenting-2 = { src = "DSCF1036.jpg" }
+hurtis-presenting-1 = { src = "DSCF1041.jpg" }
+sven-programming = { src = "DSCF1045.jpg" }
+rowan-presenting = { src = "DSCF1056.jpg" }
+emmanuel-pondering = { src = "DSCF1064.jpg" }
+mitch-presenting-1 = { src = "DSCF1065.jpg" }
+mitch-presenting-2 = { src = "DSCF1072.jpg" }
+board = { src = "DSCF1104.jpg" }

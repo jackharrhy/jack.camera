@@ -593,6 +593,365 @@
           "src": "assets/flyfest-overall-wellness-wallpaper.png"
         }
       }
+    },
+    "demo-night-2-nov2025": {
+      "title": "Demo Night 2 - November 2025",
+      "date": "2025-11-02",
+      "location": "local:./data/demo-night-2-nov2025",
+      "photos": {
+        "faiaz-pizza": {
+          "src": "DSCF0837.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 640,
+          "f_stop": 3.2,
+          "focal_length": 16.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "denny-intro-1": {
+          "src": "DSCF0857.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.00909090909090909
+        },
+        "denny-intro-2": {
+          "src": "DSCF0859.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.009523809523809525
+        },
+        "dan-listening": {
+          "src": "DSCF0863.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.008333333333333333
+        },
+        "rowan-locked-in": {
+          "src": "DSCF0865.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "riley-with-brainz": {
+          "src": "DSCF0867.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.0025
+        },
+        "riley-shout": {
+          "src": "DSCF0871.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.00909090909090909
+        },
+        "riley-and-spaghetti": {
+          "src": "DSCF0874.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 800,
+          "f_stop": 2.8,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "locked-in-onlookers": {
+          "src": "DSCF0877.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 2.0,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "thomas-presenting-1": {
+          "src": "DSCF0883.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.8,
+          "focal_length": 56.0,
+          "exposure_time": 0.00625
+        },
+        "thomas-presenting-2": {
+          "src": "DSCF0886.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 2.0,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "faiaz-presenting": {
+          "src": "DSCF0904.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "pensive-amin": {
+          "src": "DSCF0908.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "honour-presenting-1": {
+          "src": "DSCF0918.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.4,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "honour-presenting-2": {
+          "src": "DSCF0921.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "more-pensive": {
+          "src": "DSCF0926.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "amin-presenting-1": {
+          "src": "DSCF0932.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "amin-presenting-2": {
+          "src": "DSCF0934.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "natalie-perched": {
+          "src": "DSCF0940.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "nick-presenting-1": {
+          "src": "DSCF0943.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "nick-presenting-2": {
+          "src": "DSCF0948.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "focused-onlookers": {
+          "src": "DSCF0954.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "denny-listening": {
+          "src": "DSCF0955.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 500,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "alex-presenting-1": {
+          "src": "DSCF0972.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 320,
+          "f_stop": 1.4,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "alex-presenting-2": {
+          "src": "DSCF0976.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 320,
+          "f_stop": 1.6,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "fume-presenting-1": {
+          "src": "DSCF0992.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 320,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "fume-presenting-2": {
+          "src": "DSCF0997.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 320,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "leah-listening": {
+          "src": "DSCF1015.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 320,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "natalie-presenting-1": {
+          "src": "DSCF1026.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 100,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "natalie-presenting-2": {
+          "src": "DSCF1030.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "evan-presenting-1": {
+          "src": "DSCF1034.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "evan-presenting-2": {
+          "src": "DSCF1036.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "hurtis-presenting-1": {
+          "src": "DSCF1041.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 200,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "sven-programming": {
+          "src": "DSCF1045.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "rowan-presenting": {
+          "src": "DSCF1056.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "emmanuel-pondering": {
+          "src": "DSCF1064.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 2.0,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "mitch-presenting-1": {
+          "src": "DSCF1065.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "mitch-presenting-2": {
+          "src": "DSCF1072.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        },
+        "board": {
+          "src": "DSCF1104.jpg",
+          "make": "FUJIFILM",
+          "model": "X-T2",
+          "iso": 400,
+          "f_stop": 1.2,
+          "focal_length": 56.0,
+          "exposure_time": 0.016666666666666666
+        }
+      },
+      "assets": {}
     }
   }
 }

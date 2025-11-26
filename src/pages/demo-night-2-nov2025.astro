@@ -1,10 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Image from "../components/fly-fest-oct-2022/Image.astro";
-import { BASE_URL } from "../consts";
+import Image from "../components/Image.astro";
 
 const page = "demo-night-2-nov2025";
-const imgBase = `${BASE_URL}/${page}`;
 ---
 
 <Layout title="demo night 2 nov 2025">
@@ -12,6 +10,151 @@ const imgBase = `${BASE_URL}/${page}`;
     <header>
       <h1>Demo Night 2 - November 2025</h1>
     </header>
-    <p>Coming soon...</p>
+    <div class="section">
+      <Image page={page} key="faiaz-pizza" />
+    </div>
+    <div class="section">
+      <Image page={page} key="denny-intro-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="denny-intro-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="dan-listening" />
+    </div>
+    <div class="section">
+      <Image page={page} key="rowan-locked-in" />
+    </div>
+    <div class="section">
+      <Image page={page} key="riley-with-brainz" />
+    </div>
+    <div class="section">
+      <Image page={page} key="riley-shout" />
+    </div>
+    <div class="section">
+      <Image page={page} key="riley-and-spaghetti" />
+    </div>
+    <div class="section">
+      <Image page={page} key="locked-in-onlookers" />
+    </div>
+    <div class="section">
+      <Image page={page} key="thomas-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="thomas-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="faiaz-presenting" />
+    </div>
+    <div class="section">
+      <Image page={page} key="pensive-amin" />
+    </div>
+    <div class="section">
+      <Image page={page} key="honour-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="honour-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="more-pensive" />
+    </div>
+    <div class="section">
+      <Image page={page} key="amin-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="amin-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="natalie-perched" />
+    </div>
+    <div class="section">
+      <Image page={page} key="nick-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="nick-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="focused-onlookers" />
+    </div>
+    <div class="section">
+      <Image page={page} key="denny-listening" />
+    </div>
+    <div class="section">
+      <Image page={page} key="alex-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="alex-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="fume-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="fume-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="leah-listening" />
+    </div>
+    <div class="section">
+      <Image page={page} key="natalie-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="natalie-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="evan-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="evan-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="hurtis-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="sven-programming" />
+    </div>
+    <div class="section">
+      <Image page={page} key="rowan-presenting" />
+    </div>
+    <div class="section">
+      <Image page={page} key="emmanuel-pondering" />
+    </div>
+    <div class="section">
+      <Image page={page} key="mitch-presenting-1" />
+    </div>
+    <div class="section">
+      <Image page={page} key="mitch-presenting-2" />
+    </div>
+    <div class="section">
+      <Image page={page} key="board" />
+    </div>
   </main>
 </Layout>
+
+<style is:global>
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    padding: 4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .section img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 1200px) {
+    .section {
+      height: auto;
+    }
+  }
+</style>
