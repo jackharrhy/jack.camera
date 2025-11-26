@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Image from "../components/fly-fest-oct-2022/Image.astro";
+import { BASE_URL } from "../consts";
 
-const imgBase = "https://files.jack.camera/fly-fest-oct2022";
+const page = "fly-fest-oct2022";
+const imgBase = `${BASE_URL}/${page}`;
 ---
 
 <Layout title="fly fest oct 2022">
   <main>
     <header>
-      <Image key="assets/poster" ext="png" />
+      <Image page={page} key="assets/poster" ext="png" />
       <p>
         photos from fly festival, from the camera & website of <a
           href="https://jackharrhy.dev">jack harrhy</a
@@ -31,245 +33,245 @@ const imgBase = "https://files.jack.camera/fly-fest-oct2022";
     </div>
     <div class="section double posters">
       <div>
-        <Image key="assets/poster-alt" />
-        <Image key="poster-on-pole" />
+        <Image page={page} key="assets/poster-alt" />
+        <Image page={page} key="poster-on-pole" />
       </div>
     </div>
     <div class="cd">
-      <Image key="assets/cd-andrew-smith" variant="full" />
+      <Image page={page} key="assets/cd-andrew-smith" variant="full" />
       <a href="https://www.instagram.com/andrwsmth0/">
         <p>📷 @andrwsmth0</p>
       </a>
     </div>
     <div class="section">
-      <Image key="andrew-vert-flare" />
+      <Image page={page} key="andrew-vert-flare" />
     </div>
     <div class="section">
-      <Image key="andrew-vert-flare-alt" />
+      <Image page={page} key="andrew-vert-flare-alt" />
     </div>
     <div class="insert dino">
-      <Image key="dino" />
+      <Image page={page} key="dino" />
     </div>
     <div class="section">
-      <Image key="andrew-crowd-front" />
+      <Image page={page} key="andrew-crowd-front" />
     </div>
     <div class="section">
-      <Image key="andrew-crowd-side" />
+      <Image page={page} key="andrew-crowd-side" />
     </div>
     <div class="section">
-      <Image key="andrew-front" />
+      <Image page={page} key="andrew-front" />
     </div>
     <div class="cd">
-      <Image key="assets/cd-greta" variant="full" />
+      <Image page={page} key="assets/cd-greta" variant="full" />
       <a href="https://www.instagram.com/gretaandthegoldfish/">
         <p>📷 @gretaandthegoldfish</p>
       </a>
     </div>
     <div class="section">
-      <Image key="greta-setup" />
+      <Image page={page} key="greta-setup" />
     </div>
     <div class="section">
-      <Image key="greta-christian-vert" />
+      <Image page={page} key="greta-christian-vert" />
     </div>
     <div class="section">
-      <Image key="greta-herself-vert" />
+      <Image page={page} key="greta-herself-vert" />
     </div>
     <div class="section">
-      <Image key="greta-herself-front" />
+      <Image page={page} key="greta-herself-front" />
     </div>
     <div class="section">
-      <Image key="greta-christian-front" />
+      <Image page={page} key="greta-christian-front" />
     </div>
     <div class="section">
-      <Image key="greta-aidan-sing-keeb" />
+      <Image page={page} key="greta-aidan-sing-keeb" />
     </div>
     <div class="section">
-      <Image key="greta-raine-vert" />
+      <Image page={page} key="greta-raine-vert" />
     </div>
     <div class="section">
-      <Image key="greta-aidan-vert" />
+      <Image page={page} key="greta-aidan-vert" />
     </div>
     <div class="section">
-      <Image key="greta-crowd" />
+      <Image page={page} key="greta-crowd" />
     </div>
     <div class="section">
-      <Image key="greta-crowd-zoom" />
+      <Image page={page} key="greta-crowd-zoom" />
     </div>
     <div class="section">
-      <Image key="greta-crowd-behind" />
+      <Image page={page} key="greta-crowd-behind" />
     </div>
     <div class="section">
-      <Image key="greta-crowd-behind-flare" />
+      <Image page={page} key="greta-crowd-behind-flare" />
     </div>
     <div class="headstone">
       <p>🪦</p>
     </div>
     <div class="section zombie">
-      <Image key="zombie-crowd-1" />
+      <Image page={page} key="zombie-crowd-1" />
     </div>
     <div class="section zombie">
-      <Image key="zombie-crowd-2" />
+      <Image page={page} key="zombie-crowd-2" />
     </div>
     <div class="section zombie">
-      <Image key="zombie-closeup" />
+      <Image page={page} key="zombie-closeup" />
     </div>
     <div class="section zombie">
-      <Image key="zombie-dead" />
+      <Image page={page} key="zombie-dead" />
     </div>
     <div class="headstone">
       <p>🪦</p>
     </div>
     <div class="cd">
-      <Image key="assets/cd-cuperos" variant="full" />
+      <Image page={page} key="assets/cd-cuperos" variant="full" />
       <a href="https://www.instagram.com/cuerpos_bodies/">
         <p>📷 @cuerpos_bodies</p>
       </a>
     </div>
     <div class="section">
-      <Image key="cuperos-front-setup" />
+      <Image page={page} key="cuperos-front-setup" />
     </div>
     <div class="section">
-      <Image key="cuperos-side" />
+      <Image page={page} key="cuperos-side" />
     </div>
     <div class="section">
-      <Image key="cuperos-francis-keeb" />
+      <Image page={page} key="cuperos-francis-keeb" />
     </div>
     <div class="section">
-      <Image key="cuperos-francis-keeb-closer" />
+      <Image page={page} key="cuperos-francis-keeb-closer" />
     </div>
     <div class="section">
-      <Image key="cuperos-nadia" />
+      <Image page={page} key="cuperos-nadia" />
     </div>
     <div class="section">
-      <Image key="cuperos-front-playing" />
+      <Image page={page} key="cuperos-front-playing" />
     </div>
     <div class="section double knobs">
       <div>
-        <Image class="small" key="cuperos-james-with-knobs-vert" />
-        <Image key="cuperos-james-with-knobs" />
+        <Image page={page} class="small" key="cuperos-james-with-knobs-vert" />
+        <Image page={page} key="cuperos-james-with-knobs" />
       </div>
     </div>
     <div class="section">
-      <Image key="cuperos-nadia-vert" />
+      <Image page={page} key="cuperos-nadia-vert" />
     </div>
     <div class="section">
-      <Image key="cuperos-side-alt" />
+      <Image page={page} key="cuperos-side-alt" />
     </div>
     <div class="section sparkles">
       <p>✨</p>
-      <Image key="cayley-and-emma" />
+      <Image page={page} key="cayley-and-emma" />
       <p>✨</p>
     </div>
     <div class="insert stickers">
-      <Image key="stickers" />
+      <Image page={page} key="stickers" />
     </div>
     <div class="cd">
-      <Image key="assets/cd-lexi" variant="full" />
+      <Image page={page} key="assets/cd-lexi" variant="full" />
       <a href="https://www.instagram.com/lexihicksmusic/">
         <p>📷 @lexihicksmusic</p>
       </a>
     </div>
     <div class="section">
-      <Image key="lexi-herself-setup" />
+      <Image page={page} key="lexi-herself-setup" />
     </div>
     <div class="section double chris-setup">
       <div>
-        <Image class="small" key="lexi-chris-setup-behind" />
-        <Image key="lexi-chris-setup" />
+        <Image page={page} class="small" key="lexi-chris-setup-behind" />
+        <Image page={page} key="lexi-chris-setup" />
       </div>
     </div>
     <div class="section">
-      <Image key="lexi-setup" />
+      <Image page={page} key="lexi-setup" />
     </div>
     <div class="section">
-      <Image key="lexi-aidan-setup" />
+      <Image page={page} key="lexi-aidan-setup" />
     </div>
     <div class="section">
-      <Image key="lexi-front" />
+      <Image page={page} key="lexi-front" />
     </div>
     <div class="section">
-      <Image key="lexi-side" />
+      <Image page={page} key="lexi-side" />
     </div>
     <div class="section">
-      <Image key="lexi-raine" />
+      <Image page={page} key="lexi-raine" />
     </div>
     <div class="section">
-      <Image key="lexi-front-darker" />
+      <Image page={page} key="lexi-front-darker" />
     </div>
     <div class="section trading">
-      <Image key="assets/trading" ext="png" />
+      <Image page={page} key="assets/trading" ext="png" />
     </div>
     <div class="cd">
-      <Image key="assets/cd-weary" variant="full" />
+      <Image page={page} key="assets/cd-weary" variant="full" />
       <a href="https://www.instagram.com/wearyband/">
         <p>📷 @wearyband</p>
       </a>
     </div>
     <div class="section">
-      <Image key="weary-side" />
+      <Image page={page} key="weary-side" />
     </div>
     <div class="section">
-      <Image key="weary-christopher-side" />
+      <Image page={page} key="weary-christopher-side" />
     </div>
     <div class="section">
-      <Image key="weary-christopher-front" />
+      <Image page={page} key="weary-christopher-front" />
     </div>
     <div class="section">
-      <Image key="weary-kate-front" />
+      <Image page={page} key="weary-kate-front" />
     </div>
     <div class="section">
-      <Image key="weary-meg" />
+      <Image page={page} key="weary-meg" />
     </div>
     <div class="section">
-      <Image key="weary-front" />
+      <Image page={page} key="weary-front" />
     </div>
     <div class="cd">
-      <Image key="assets/cd-planes" variant="full" />
+      <Image page={page} key="assets/cd-planes" variant="full" />
       <a href="https://www.instagram.com/imaginary.planes/">
         <p>📷 @imaginary.planes</p>
       </a>
     </div>
     <div class="section">
-      <Image key="planes-james-front" />
+      <Image page={page} key="planes-james-front" />
     </div>
     <div class="section double planes-double-1">
       <div>
-        <Image class="raine" key="planes-raine-front" />
-        <Image key="planes-james-flare" />
+        <Image page={page} class="raine" key="planes-raine-front" />
+        <Image page={page} key="planes-james-flare" />
       </div>
     </div>
     <div class="section double planes-double-2">
       <div>
-        <Image key="planes-raine-side" />
-        <Image class="nick" key="planes-nick" />
+        <Image page={page} key="planes-raine-side" />
+        <Image page={page} class="nick" key="planes-nick" />
       </div>
     </div>
     <div class="section">
-      <Image key="planes-front" />
+      <Image page={page} key="planes-front" />
     </div>
     <div class="section">
-      <Image key="planes-side" />
+      <Image page={page} key="planes-side" />
     </div>
     <div class="section">
-      <Image key="planes-nick-alt" />
+      <Image page={page} key="planes-nick-alt" />
     </div>
     <div class="section">
-      <Image key="planes-james-sing-front" />
+      <Image page={page} key="planes-james-sing-front" />
     </div>
     <div class="section">
-      <Image key="planes-side-alt" />
+      <Image page={page} key="planes-side-alt" />
     </div>
     <div class="cd">
-      <Image key="assets/porta-fly-fest" ext="png" variant="full" />
+      <Image page={page} key="assets/porta-fly-fest" ext="png" variant="full" />
       <a href="https://www.instagram.com/flyfestnl/">
         <p>📷 @flyfestnl</p>
       </a>
     </div>
     <div class="section">
-      <Image key="organizers" />
+      <Image page={page} key="organizers" />
     </div>
     <div class="section wellness">
-      <Image key="assets/overall-wellness" ext="png" />
+      <Image page={page} key="assets/overall-wellness" ext="png" />
       <a
         href={`${imgBase}/assets/flyfest-overall-wellness-wallpaper.png`}
         download="flyfest-overall-wellness-wallpaper.png"

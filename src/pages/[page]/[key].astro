@@ -1,0 +1,81 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import info from "../../info.json";
+import { toFraction } from "../../utilts";
+import { BASE_URL } from "../../consts";
+
+interface Props {
+  src: string;
+  about: string;
+}
+
+export function getStaticPaths() {
+  return Object.entries(info.pages)
+    .map(([page, pageInfo]) => {
+      const { assets, photos } = pageInfo;
+
+      const assetPaths = Object.entries(assets).map(([key, { src }]) => ({
+        params: {
+          page,
+          key: `assets-${key}`,
+        },
+        props: {
+          src,
+        },
+      }));
+
+      const photoPaths = Object.entries(photos).map(([key, photo]) => ({
+        params: {
+          page,
+          key,
+        },
+        props: {
+          src: photo.src,
+          about: `${photo.make} ${photo.model} / ISO ${photo.iso} / f${
+            photo.f_stop
+          } / ${photo.focal_length}mm / ${toFraction(photo.exposure_time)}s`,
+        },
+      }));
+
+      return [...assetPaths, ...photoPaths];
+    })
+    .flat();
+}
+
+const { page, key } = Astro.params;
+const { src, about } = Astro.props;
+
+const ext = src.split(".")[1];
+
+const imgSrc = `${BASE_URL}/${page}/${key.replace("assets-", "assets/")}.${ext}`;
+---
+
+<Layout title={`${page} - ${key}`}>
+  <main>
+    <img src={imgSrc} loading="lazy" />
+    {about && <p>{about}</p>}
+  </main>
+</Layout>
+
+<style is:global>
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  img {
+    margin: 0 auto;
+    max-height: 80vh;
+    max-width: 80vw;
+  }
+  p {
+    margin: 1rem 1rem;
+    text-align: center;
+  }
+</style>

@@ -1,15 +1,22 @@
 ---
-const imgBase = "https://files.jack.camera/fly-fest-oct2022";
+import { BASE_URL } from "../../consts";
 
-const { key, ext, variant = "small", class: klass } = Astro.props;
+interface Props {
+  page: string;
+  key: string;
+  ext?: string;
+  variant?: "small" | "full";
+  class?: string;
+}
+
+const { page, key, ext, variant = "small", class: klass } = Astro.props;
+
+const imgBase = `${BASE_URL}/${page}`;
 
 const middle = variant === "small" ? ".small." : ".";
 ---
 
-<a
-  href={`/fly-fest-oct2022/${key.replace("/", "-")}`}
-  style="display: contents;"
->
+<a href={`/${page}/${key.replace("/", "-")}`} style="display: contents;">
   <img
     src={`${imgBase}/${key}${middle}${ext ?? "jpg"}`}
     loading="lazy"
