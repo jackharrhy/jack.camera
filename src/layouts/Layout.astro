@@ -48,3 +48,20 @@ const { title } = Astro.props;
     </style>
   </body>
 </html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const clickableImages = document.querySelectorAll(".clickable-image");
+    clickableImages.forEach((image) => {
+      image.addEventListener("contextmenu", (e) => {
+        if (e.currentTarget instanceof HTMLImageElement) {
+          const aTag = e.currentTarget.closest("a");
+          if (aTag) {
+            e.preventDefault();
+            aTag.click();
+          }
+        }
+      });
+    });
+  });
+</script>

@@ -35,7 +35,7 @@ const middle = variant === "small" ? ".small." : ".";
     src={`${imgBase}/${key}${middle}${ext ?? "jpg"}`}
     alt={key}
     loading="lazy"
-    class={klass}
+    class={klass ? `${klass} clickable-image` : "clickable-image"}
     width={dimensions?.width}
     height={dimensions?.height}
   />
