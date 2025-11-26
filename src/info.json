@@ -556,17 +556,39 @@
         }
       },
       "assets": {
-        "cd-andrew-smith": { "src": "assets/cd-andrew-smith.jpg" },
-        "cd-cuperos": { "src": "assets/cd-cuperos.jpg" },
-        "cd-greta": { "src": "assets/cd-greta.jpg" },
-        "cd-lexi": { "src": "assets/cd-lexi.jpg" },
-        "cd-planes": { "src": "assets/cd-planes.jpg" },
-        "cd-weary": { "src": "assets/cd-weary.jpg" },
-        "overall-wellness": { "src": "assets/overall-wellness.png" },
-        "porta-fly-fest": { "src": "assets/porta-fly-fest.png" },
-        "poster-alt": { "src": "assets/poster-alt.jpg" },
-        "poster": { "src": "assets/poster.png" },
-        "trading": { "src": "assets/trading.png" },
+        "cd-andrew-smith": {
+          "src": "assets/cd-andrew-smith.jpg"
+        },
+        "cd-cuperos": {
+          "src": "assets/cd-cuperos.jpg"
+        },
+        "cd-greta": {
+          "src": "assets/cd-greta.jpg"
+        },
+        "cd-lexi": {
+          "src": "assets/cd-lexi.jpg"
+        },
+        "cd-planes": {
+          "src": "assets/cd-planes.jpg"
+        },
+        "cd-weary": {
+          "src": "assets/cd-weary.jpg"
+        },
+        "overall-wellness": {
+          "src": "assets/overall-wellness.png"
+        },
+        "porta-fly-fest": {
+          "src": "assets/porta-fly-fest.png"
+        },
+        "poster-alt": {
+          "src": "assets/poster-alt.jpg"
+        },
+        "poster": {
+          "src": "assets/poster.png"
+        },
+        "trading": {
+          "src": "assets/trading.png"
+        },
         "flyfest-overall-wellness-wallpaper": {
           "src": "assets/flyfest-overall-wellness-wallpaper.png"
         }

@@ -56,7 +56,7 @@ const { key } = Astro.params;
 const { src, about } = Astro.props;
 
 const imgBase = "https://files.jack.camera/fly-fest-oct2022";
-const ext = (src as string).split(".")[1];
+const ext = src.split(".")[1];
 ---
 
 <Layout title={`fly fest - ${key}`}>
