@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import info from "../../info.json";
 import { toFraction } from "../../utilts";
 import { BASE_URL } from "../../consts";
+import { Image } from "astro:assets";
 
 interface Props {
   src: string;
@@ -45,6 +46,16 @@ export function getStaticPaths() {
 const { page, key } = Astro.params;
 const { src, about } = Astro.props;
 
+const pageKey = key.replace("assets/", "").replace("assets-", "");
+const pageInfo = info.pages?.[page as keyof typeof info.pages];
+const photoInfo =
+  pageInfo?.photos?.[pageKey as keyof typeof pageInfo.photos] ||
+  pageInfo?.assets?.[pageKey as keyof typeof pageInfo.assets];
+if (!photoInfo) {
+  throw new Error(`Photo or asset not found: ${page} - ${key}`);
+}
+const dimensions = photoInfo?.dimensions;
+
 const ext = src.split(".")[1];
 
 const imgSrc = `${BASE_URL}/${page}/${key.replace("assets-", "assets/")}.${ext}`;
@@ -52,7 +63,12 @@ const imgSrc = `${BASE_URL}/${page}/${key.replace("assets-", "assets/")}.${ext}`
 
 <Layout title={`${page} - ${key}`}>
   <main>
-    <img src={imgSrc} loading="lazy" />
+    <Image
+      src={imgSrc}
+      alt={key}
+      width={dimensions?.width}
+      height={dimensions?.height}
+    />
     {about && <p>{about}</p>}
   </main>
 </Layout>
@@ -71,6 +87,8 @@ const imgSrc = `${BASE_URL}/${page}/${key.replace("assets-", "assets/")}.${ext}`
 
   img {
     margin: 0 auto;
+    height: auto;
+    width: auto;
     max-height: 80vh;
     max-width: 80vw;
   }

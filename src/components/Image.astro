@@ -16,7 +16,6 @@ const { page, key, ext, variant = "small", class: klass } = Astro.props;
 const pageKey = key.replace("assets/", "");
 
 const pageInfo = info.pages?.[page as keyof typeof info.pages];
-console.log(pageInfo);
 const photoInfo = pageInfo?.photos?.[pageKey] || pageInfo?.assets?.[pageKey];
 
 if (!photoInfo) {
@@ -26,7 +25,6 @@ if (!photoInfo) {
 const dimensions =
   variant === "small" ? photoInfo?.small_dimensions : photoInfo?.dimensions;
 
-console.log(key, dimensions);
 const imgBase = `${BASE_URL}/${page}`;
 
 const middle = variant === "small" ? ".small." : ".";
