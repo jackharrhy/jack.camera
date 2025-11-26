@@ -12,7 +12,15 @@
           "iso": 100,
           "f_stop": 4.5,
           "focal_length": 56.0,
-          "exposure_time": 0.0014705882352941176
+          "exposure_time": 0.0014705882352941176,
+          "dimensions": {
+            "width": 3596,
+            "height": 5754
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3200
+          }
         },
         "andrew-vert-flare": {
           "src": "DSCF9735.jpg",
@@ -21,7 +29,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.000588235294117647
+          "exposure_time": 0.000588235294117647,
+          "dimensions": {
+            "width": 3651,
+            "height": 4564
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "andrew-vert-flare-alt": {
           "src": "DSCF9741.jpg",
@@ -30,7 +46,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.0004
+          "exposure_time": 0.0004,
+          "dimensions": {
+            "width": 3104,
+            "height": 3880
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "dino": {
           "src": "DSCF9766.jpg",
@@ -39,7 +63,15 @@
           "iso": 100,
           "f_stop": 10.0,
           "focal_length": 50.5,
-          "exposure_time": 0.0125
+          "exposure_time": 0.0125,
+          "dimensions": {
+            "width": 2733,
+            "height": 2186
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "andrew-crowd-front": {
           "src": "DSCF9768.jpg",
@@ -48,7 +80,15 @@
           "iso": 100,
           "f_stop": 10.0,
           "focal_length": 18.0,
-          "exposure_time": 0.022222222222222223
+          "exposure_time": 0.022222222222222223,
+          "dimensions": {
+            "width": 4115,
+            "height": 3292
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "andrew-crowd-side": {
           "src": "DSCF9774.jpg",
@@ -57,7 +97,15 @@
           "iso": 100,
           "f_stop": 6.4,
           "focal_length": 22.3,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3640,
+            "height": 2912
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "andrew-front": {
           "src": "DSCF9799.jpg",
@@ -66,7 +114,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.00025
+          "exposure_time": 0.00025,
+          "dimensions": {
+            "width": 4591,
+            "height": 3673
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-setup": {
           "src": "DSCF9801.jpg",
@@ -75,7 +131,15 @@
           "iso": 100,
           "f_stop": 4.5,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-christian-vert": {
           "src": "DSCF9828.jpg",
@@ -84,7 +148,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.0005
+          "exposure_time": 0.0005,
+          "dimensions": {
+            "width": 3668,
+            "height": 4585
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "greta-herself-vert": {
           "src": "DSCF9829.jpg",
@@ -93,7 +165,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.0005
+          "exposure_time": 0.0005,
+          "dimensions": {
+            "width": 3386,
+            "height": 4232
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "greta-herself-front": {
           "src": "DSCF9855.jpg",
@@ -102,7 +182,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.0005
+          "exposure_time": 0.0005,
+          "dimensions": {
+            "width": 4115,
+            "height": 3292
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-christian-front": {
           "src": "DSCF9856.jpg",
@@ -111,7 +199,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.001
+          "exposure_time": 0.001,
+          "dimensions": {
+            "width": 4530,
+            "height": 3624
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-aidan-sing-keeb": {
           "src": "DSCF9858.jpg",
@@ -120,7 +216,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.001
+          "exposure_time": 0.001,
+          "dimensions": {
+            "width": 3353,
+            "height": 4191
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "greta-raine-vert": {
           "src": "DSCF9871.jpg",
@@ -129,7 +233,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.00025
+          "exposure_time": 0.00025,
+          "dimensions": {
+            "width": 3702,
+            "height": 4627
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "greta-aidan-vert": {
           "src": "DSCF9887.jpg",
@@ -138,7 +250,15 @@
           "iso": 200,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.0005
+          "exposure_time": 0.0005,
+          "dimensions": {
+            "width": 3518,
+            "height": 4397
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "greta-crowd": {
           "src": "DSCF9894.jpg",
@@ -147,7 +267,15 @@
           "iso": 200,
           "f_stop": 5.0,
           "focal_length": 21.4,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 4627,
+            "height": 3702
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-crowd-zoom": {
           "src": "DSCF9902.jpg",
@@ -156,7 +284,15 @@
           "iso": 200,
           "f_stop": 4.5,
           "focal_length": 48.4,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 4328,
+            "height": 3462
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-crowd-behind": {
           "src": "DSCF9936.jpg",
@@ -165,7 +301,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 55.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4790,
+            "height": 3832
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "greta-crowd-behind-flare": {
           "src": "DSCF9939.jpg",
@@ -174,7 +318,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 18.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4005,
+            "height": 3204
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "zombie-crowd-1": {
           "src": "DSCF9959.jpg",
@@ -183,7 +335,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 34.3,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4082,
+            "height": 3266
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "zombie-crowd-2": {
           "src": "DSCF9969.jpg",
@@ -192,7 +352,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 18.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "zombie-closeup": {
           "src": "DSCF0026.jpg",
@@ -201,7 +369,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 18.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3751,
+            "height": 4689
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "zombie-dead": {
           "src": "DSCF0042.jpg",
@@ -210,7 +386,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 28.9,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4580,
+            "height": 3664
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cuperos-front-setup": {
           "src": "DSCF0047.jpg",
@@ -219,7 +403,15 @@
           "iso": 200,
           "f_stop": 5.6,
           "focal_length": 46.3,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3517,
+            "height": 2814
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cuperos-side": {
           "src": "DSCF0060.jpg",
@@ -228,7 +420,15 @@
           "iso": 200,
           "f_stop": 4.0,
           "focal_length": 55.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4104,
+            "height": 3283
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cuperos-francis-keeb": {
           "src": "DSCF0077.jpg",
@@ -237,7 +437,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 3303,
+            "height": 4129
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "cuperos-francis-keeb-closer": {
           "src": "DSCF0079.jpg",
@@ -246,7 +454,15 @@
           "iso": 100,
           "f_stop": 1.4,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 3646,
+            "height": 4557
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "cuperos-nadia": {
           "src": "DSCF0102.jpg",
@@ -255,7 +471,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.002
+          "exposure_time": 0.002,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cuperos-front-playing": {
           "src": "DSCF0128.jpg",
@@ -264,7 +488,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cuperos-james-with-knobs-vert": {
           "src": "DSCF0132.jpg",
@@ -273,7 +505,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 3535,
+            "height": 4419
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "cuperos-james-with-knobs": {
           "src": "DSCF0145.jpg",
@@ -282,7 +522,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cuperos-nadia-vert": {
           "src": "DSCF0149.jpg",
@@ -291,7 +539,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 3402,
+            "height": 4253
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "cuperos-side-alt": {
           "src": "DSCF0167.jpg",
@@ -300,7 +556,15 @@
           "iso": 250,
           "f_stop": 2.8,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "cayley-and-emma": {
           "src": "DSCF0179.jpg",
@@ -309,7 +573,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.002
+          "exposure_time": 0.002,
+          "dimensions": {
+            "width": 3569,
+            "height": 4461
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "stickers": {
           "src": "DSCF0181.jpg",
@@ -318,7 +590,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.002
+          "exposure_time": 0.002,
+          "dimensions": {
+            "width": 5436,
+            "height": 3624
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1333
+          }
         },
         "lexi-herself-setup": {
           "src": "DSCF0192.jpg",
@@ -327,7 +607,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.002
+          "exposure_time": 0.002,
+          "dimensions": {
+            "width": 3734,
+            "height": 4667
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "lexi-chris-setup": {
           "src": "DSCF0210.jpg",
@@ -336,7 +624,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 3784,
+            "height": 4730
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "lexi-chris-setup-behind": {
           "src": "DSCF0213.jpg",
@@ -345,7 +641,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 4000,
+            "height": 6000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3000
+          }
         },
         "lexi-setup": {
           "src": "DSCF0221.jpg",
@@ -354,7 +658,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 5668,
+            "height": 3188
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1125
+          }
         },
         "lexi-aidan-setup": {
           "src": "DSCF0239.jpg",
@@ -363,7 +675,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.004
+          "exposure_time": 0.004,
+          "dimensions": {
+            "width": 3376,
+            "height": 4220
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "lexi-front": {
           "src": "DSCF0287.jpg",
@@ -372,7 +692,15 @@
           "iso": 500,
           "f_stop": 4.0,
           "focal_length": 55.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4071,
+            "height": 3257
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "lexi-side": {
           "src": "DSCF0316.jpg",
@@ -381,7 +709,15 @@
           "iso": 500,
           "f_stop": 4.0,
           "focal_length": 46.3,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4668,
+            "height": 3734
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "lexi-raine": {
           "src": "DSCF0350.jpg",
@@ -390,7 +726,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "lexi-front-darker": {
           "src": "DSCF0362.jpg",
@@ -399,7 +743,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4535,
+            "height": 3628
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "weary-side": {
           "src": "DSCF0405.jpg",
@@ -408,7 +760,15 @@
           "iso": 250,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "weary-christopher-side": {
           "src": "DSCF0412.jpg",
@@ -417,7 +777,15 @@
           "iso": 250,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3120,
+            "height": 3900
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "weary-christopher-front": {
           "src": "DSCF0421.jpg",
@@ -426,7 +794,15 @@
           "iso": 250,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 2971,
+            "height": 3714
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "weary-kate-front": {
           "src": "DSCF0423.jpg",
@@ -435,7 +811,15 @@
           "iso": 250,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4469,
+            "height": 3575
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "weary-meg": {
           "src": "DSCF0441.jpg",
@@ -444,7 +828,15 @@
           "iso": 250,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3606,
+            "height": 2885
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "weary-front": {
           "src": "DSCF0450.jpg",
@@ -453,7 +845,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "planes-james-front": {
           "src": "DSCF0455.jpg",
@@ -462,7 +862,15 @@
           "iso": 400,
           "f_stop": 1.4,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4624,
+            "height": 3699
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "planes-raine-front": {
           "src": "DSCF0470.jpg",
@@ -471,7 +879,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3685,
+            "height": 4606
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "planes-james-flare": {
           "src": "DSCF0475.jpg",
@@ -480,7 +896,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 2944,
+            "height": 3680
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "planes-nick": {
           "src": "DSCF0488.jpg",
@@ -489,7 +913,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3668,
+            "height": 4585
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "planes-raine-side": {
           "src": "DSCF0491.jpg",
@@ -498,7 +930,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3784,
+            "height": 4730
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "planes-front": {
           "src": "DSCF0509.jpg",
@@ -507,7 +947,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4381,
+            "height": 3505
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "planes-side": {
           "src": "DSCF0512.jpg",
@@ -516,7 +964,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3794,
+            "height": 3035
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "planes-nick-alt": {
           "src": "DSCF0535.jpg",
@@ -525,7 +981,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4580,
+            "height": 3664
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "planes-james-sing-front": {
           "src": "DSCF0550.jpg",
@@ -534,7 +998,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 3350,
+            "height": 4187
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "planes-side-alt": {
           "src": "DSCF0598.jpg",
@@ -543,7 +1015,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "organizers": {
           "src": "DSCF0611.jpg",
@@ -552,45 +1032,149 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008
+          "exposure_time": 0.008,
+          "dimensions": {
+            "width": 4668,
+            "height": 3734
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         }
       },
       "assets": {
         "cd-andrew-smith": {
-          "src": "assets/cd-andrew-smith.jpg"
+          "src": "assets/cd-andrew-smith.jpg",
+          "dimensions": {
+            "width": 827,
+            "height": 827
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "cd-cuperos": {
-          "src": "assets/cd-cuperos.jpg"
+          "src": "assets/cd-cuperos.jpg",
+          "dimensions": {
+            "width": 827,
+            "height": 827
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "cd-greta": {
-          "src": "assets/cd-greta.jpg"
+          "src": "assets/cd-greta.jpg",
+          "dimensions": {
+            "width": 827,
+            "height": 827
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "cd-lexi": {
-          "src": "assets/cd-lexi.jpg"
+          "src": "assets/cd-lexi.jpg",
+          "dimensions": {
+            "width": 827,
+            "height": 827
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "cd-planes": {
-          "src": "assets/cd-planes.jpg"
+          "src": "assets/cd-planes.jpg",
+          "dimensions": {
+            "width": 827,
+            "height": 827
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "cd-weary": {
-          "src": "assets/cd-weary.jpg"
+          "src": "assets/cd-weary.jpg",
+          "dimensions": {
+            "width": 827,
+            "height": 827
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "overall-wellness": {
-          "src": "assets/overall-wellness.png"
+          "src": "assets/overall-wellness.png",
+          "dimensions": {
+            "width": 2048,
+            "height": 2048
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "porta-fly-fest": {
-          "src": "assets/porta-fly-fest.png"
+          "src": "assets/porta-fly-fest.png",
+          "dimensions": {
+            "width": 808,
+            "height": 808
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2000
+          }
         },
         "poster-alt": {
-          "src": "assets/poster-alt.jpg"
+          "src": "assets/poster-alt.jpg",
+          "dimensions": {
+            "width": 3082,
+            "height": 4820
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3128
+          }
         },
         "poster": {
-          "src": "assets/poster.png"
+          "src": "assets/poster.png",
+          "dimensions": {
+            "width": 2650,
+            "height": 4096
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3091
+          }
         },
         "trading": {
-          "src": "assets/trading.png"
+          "src": "assets/trading.png",
+          "dimensions": {
+            "width": 1200,
+            "height": 1800
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3000
+          }
         },
         "flyfest-overall-wellness-wallpaper": {
-          "src": "assets/flyfest-overall-wellness-wallpaper.png"
+          "src": "assets/flyfest-overall-wellness-wallpaper.png",
+          "dimensions": {
+            "width": 4096,
+            "height": 2160
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1055
+          }
         }
       }
     },
@@ -606,7 +1190,15 @@
           "iso": 640,
           "f_stop": 3.2,
           "focal_length": 16.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4763,
+            "height": 3810
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "denny-intro-1": {
           "src": "DSCF0857.jpg",
@@ -615,7 +1207,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.00909090909090909
+          "exposure_time": 0.00909090909090909,
+          "dimensions": {
+            "width": 4000,
+            "height": 6000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3000
+          }
         },
         "denny-intro-2": {
           "src": "DSCF0859.jpg",
@@ -624,7 +1224,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.009523809523809525
+          "exposure_time": 0.009523809523809525,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "dan-listening": {
           "src": "DSCF0863.jpg",
@@ -633,7 +1241,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.008333333333333333
+          "exposure_time": 0.008333333333333333,
+          "dimensions": {
+            "width": 3315,
+            "height": 4144
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "rowan-locked-in": {
           "src": "DSCF0865.jpg",
@@ -642,7 +1258,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4436,
+            "height": 3549
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "riley-with-brainz": {
           "src": "DSCF0867.jpg",
@@ -651,7 +1275,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.0025
+          "exposure_time": 0.0025,
+          "dimensions": {
+            "width": 5176,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1546
+          }
         },
         "riley-shout": {
           "src": "DSCF0871.jpg",
@@ -660,7 +1292,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.00909090909090909
+          "exposure_time": 0.00909090909090909,
+          "dimensions": {
+            "width": 3822,
+            "height": 4777
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "riley-and-spaghetti": {
           "src": "DSCF0874.jpg",
@@ -669,7 +1309,15 @@
           "iso": 800,
           "f_stop": 2.8,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3961,
+            "height": 3169
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "locked-in-onlookers": {
           "src": "DSCF0877.jpg",
@@ -678,7 +1326,15 @@
           "iso": 400,
           "f_stop": 2.0,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3929,
+            "height": 5084
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2588
+          }
         },
         "thomas-presenting-1": {
           "src": "DSCF0883.jpg",
@@ -687,7 +1343,15 @@
           "iso": 400,
           "f_stop": 1.8,
           "focal_length": 56.0,
-          "exposure_time": 0.00625
+          "exposure_time": 0.00625,
+          "dimensions": {
+            "width": 4436,
+            "height": 3549
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "thomas-presenting-2": {
           "src": "DSCF0886.jpg",
@@ -696,7 +1360,15 @@
           "iso": 400,
           "f_stop": 2.0,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4000,
+            "height": 5000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "faiaz-presenting": {
           "src": "DSCF0904.jpg",
@@ -705,7 +1377,15 @@
           "iso": 200,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "pensive-amin": {
           "src": "DSCF0908.jpg",
@@ -714,7 +1394,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4000,
+            "height": 5000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "honour-presenting-1": {
           "src": "DSCF0918.jpg",
@@ -723,7 +1411,15 @@
           "iso": 400,
           "f_stop": 1.4,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3872,
+            "height": 3098
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "honour-presenting-2": {
           "src": "DSCF0921.jpg",
@@ -732,7 +1428,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4000,
+            "height": 5000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "more-pensive": {
           "src": "DSCF0926.jpg",
@@ -741,7 +1445,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3822,
+            "height": 4777
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "amin-presenting-1": {
           "src": "DSCF0932.jpg",
@@ -750,7 +1462,15 @@
           "iso": 500,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4561,
+            "height": 3649
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "amin-presenting-2": {
           "src": "DSCF0934.jpg",
@@ -759,7 +1479,15 @@
           "iso": 500,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3217,
+            "height": 4021
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "natalie-perched": {
           "src": "DSCF0940.jpg",
@@ -768,7 +1496,15 @@
           "iso": 500,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3590,
+            "height": 4487
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "nick-presenting-1": {
           "src": "DSCF0943.jpg",
@@ -777,7 +1513,15 @@
           "iso": 500,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "nick-presenting-2": {
           "src": "DSCF0948.jpg",
@@ -786,7 +1530,15 @@
           "iso": 500,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3572,
+            "height": 4465
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "focused-onlookers": {
           "src": "DSCF0954.jpg",
@@ -795,7 +1547,15 @@
           "iso": 500,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 6000,
+            "height": 3375
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1125
+          }
         },
         "denny-listening": {
           "src": "DSCF0955.jpg",
@@ -804,7 +1564,15 @@
           "iso": 500,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "alex-presenting-1": {
           "src": "DSCF0972.jpg",
@@ -813,7 +1581,15 @@
           "iso": 320,
           "f_stop": 1.4,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3615,
+            "height": 4519
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "alex-presenting-2": {
           "src": "DSCF0976.jpg",
@@ -822,7 +1598,15 @@
           "iso": 320,
           "f_stop": 1.6,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "fume-presenting-1": {
           "src": "DSCF0992.jpg",
@@ -831,7 +1615,15 @@
           "iso": 320,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4000,
+            "height": 6000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3000
+          }
         },
         "fume-presenting-2": {
           "src": "DSCF0997.jpg",
@@ -840,7 +1632,15 @@
           "iso": 320,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4733,
+            "height": 3786
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "leah-listening": {
           "src": "DSCF1015.jpg",
@@ -849,7 +1649,15 @@
           "iso": 320,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3590,
+            "height": 4487
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "natalie-presenting-1": {
           "src": "DSCF1026.jpg",
@@ -858,7 +1666,15 @@
           "iso": 100,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "natalie-presenting-2": {
           "src": "DSCF1030.jpg",
@@ -867,7 +1683,15 @@
           "iso": 200,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 3679,
+            "height": 4599
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "evan-presenting-1": {
           "src": "DSCF1034.jpg",
@@ -876,7 +1700,15 @@
           "iso": 200,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4852,
+            "height": 3882
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "evan-presenting-2": {
           "src": "DSCF1036.jpg",
@@ -885,7 +1717,15 @@
           "iso": 200,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 5000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "hurtis-presenting-1": {
           "src": "DSCF1041.jpg",
@@ -894,7 +1734,15 @@
           "iso": 200,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4481,
+            "height": 3585
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "sven-programming": {
           "src": "DSCF1045.jpg",
@@ -903,7 +1751,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4442,
+            "height": 3554
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "rowan-presenting": {
           "src": "DSCF1056.jpg",
@@ -912,7 +1768,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4000,
+            "height": 5000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 2500
+          }
         },
         "emmanuel-pondering": {
           "src": "DSCF1064.jpg",
@@ -921,7 +1785,15 @@
           "iso": 400,
           "f_stop": 2.0,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4763,
+            "height": 3810
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "mitch-presenting-1": {
           "src": "DSCF1065.jpg",
@@ -930,7 +1802,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4332,
+            "height": 3466
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1600
+          }
         },
         "mitch-presenting-2": {
           "src": "DSCF1072.jpg",
@@ -939,7 +1819,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 6000,
+            "height": 4000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 1333
+          }
         },
         "board": {
           "src": "DSCF1104.jpg",
@@ -948,7 +1836,15 @@
           "iso": 400,
           "f_stop": 1.2,
           "focal_length": 56.0,
-          "exposure_time": 0.016666666666666666
+          "exposure_time": 0.016666666666666666,
+          "dimensions": {
+            "width": 4000,
+            "height": 6000
+          },
+          "small_dimensions": {
+            "width": 2000,
+            "height": 3000
+          }
         }
       },
       "assets": {}

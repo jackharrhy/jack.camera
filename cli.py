@@ -7,6 +7,12 @@ import typer
 import toml
 from pydantic import BaseModel, Field
 from exif import Image
+from PIL import Image as PILImage
+
+
+class Dimensions(BaseModel):
+    width: int
+    height: int
 
 
 class Photo(BaseModel):
@@ -17,10 +23,14 @@ class Photo(BaseModel):
     f_stop: float | None = None
     focal_length: float | None = None
     exposure_time: float | None = None
+    dimensions: Dimensions | None = None
+    small_dimensions: Dimensions | None = None
 
 
 class Asset(BaseModel):
     src: str
+    dimensions: Dimensions | None = None
+    small_dimensions: Dimensions | None = None
 
 
 class Page(BaseModel):
@@ -74,8 +84,16 @@ def process_asset(
     print(f"{page_id} - {asset_id}: {asset_srcpath} -> {asset_outpath}")
     shutil.copy(asset_srcpath, asset_outpath)
 
+    with PILImage.open(asset_srcpath) as pil_image:
+        asset.dimensions = Dimensions(width=pil_image.width, height=pil_image.height)
+
     small_outpath = asset_outpath.parent / f"{asset_id}.small{asset_srcpath.suffix}"
     create_small_image(asset_srcpath, small_outpath)
+
+    with PILImage.open(small_outpath) as pil_image:
+        asset.small_dimensions = Dimensions(
+            width=pil_image.width, height=pil_image.height
+        )
 
 
 def process_photo(
@@ -96,6 +114,9 @@ def process_photo(
     photo.focal_length = float(image.focal_length)
     photo.exposure_time = float(image.exposure_time)
 
+    with PILImage.open(photo_srcpath) as pil_image:
+        photo.dimensions = Dimensions(width=pil_image.width, height=pil_image.height)
+
     photo_outpath = page_outdir / f"{photo_id}{photo_srcpath.suffix}"
 
     print(f"{page_id} - {photo_id}: {photo_srcpath} -> {photo_outpath}")
@@ -103,6 +124,11 @@ def process_photo(
 
     small_outpath = photo_outpath.parent / f"{photo_id}.small{photo_srcpath.suffix}"
     create_small_image(photo_srcpath, small_outpath)
+
+    with PILImage.open(small_outpath) as pil_image:
+        photo.small_dimensions = Dimensions(
+            width=pil_image.width, height=pil_image.height
+        )
 
 
 def process_page(page_id: str, page: Page):
