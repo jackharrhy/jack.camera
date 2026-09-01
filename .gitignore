@@ -3,4 +3,7 @@ node_modules/
 data/
 public/photos
 .astro
+.venv/
+__pycache__/
+mise.local.toml
 .DS_Store

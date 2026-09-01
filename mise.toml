@@ -1,0 +1,15 @@
+[tools]
+node = "24.20.0"
+uv = "0.12.8"
+
+[tasks.setup]
+description = "Install the JavaScript and Python dependencies"
+run = ["npm ci", "uv sync --locked"]
+
+[tasks.dev]
+description = "Start the Astro development server"
+run = "npm run dev"
+
+[tasks.check]
+description = "Type-check and build the application"
+run = ["npm run check", "npm run build"]

@@ -1,17 +1,16 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import info from "../../info.json";
+import { galleries, getGalleryMedia } from "../../gallery";
 import { toFraction } from "../../utilts";
 import { BASE_URL } from "../../consts";
-import { Image } from "astro:assets";
 
 interface Props {
   src: string;
-  about: string;
+  about?: string;
 }
 
 export function getStaticPaths() {
-  return Object.entries(info.pages)
+  return Object.entries(galleries)
     .map(([page, pageInfo]) => {
       const { assets, photos } = pageInfo;
 
@@ -46,26 +45,28 @@ export function getStaticPaths() {
 const { page, key } = Astro.params;
 const { src, about } = Astro.props;
 
+if (!page || !key) {
+  throw new Error("Missing gallery or media key");
+}
+
 const pageKey = key.replace("assets/", "").replace("assets-", "");
-const pageInfo = info.pages?.[page as keyof typeof info.pages];
-const photoInfo =
-  pageInfo?.photos?.[pageKey as keyof typeof pageInfo.photos] ||
-  pageInfo?.assets?.[pageKey as keyof typeof pageInfo.assets];
+const photoInfo = getGalleryMedia(page, pageKey);
 if (!photoInfo) {
   throw new Error(`Photo or asset not found: ${page} - ${key}`);
 }
 const dimensions = photoInfo?.dimensions;
 
-const ext = src.split(".")[1];
+const ext = src.split(".").pop();
 
 const imgSrc = `${BASE_URL}/${page}/${key.replace("assets-", "assets/")}.${ext}`;
 ---
 
 <Layout title={`${page} - ${key}`}>
   <main>
-    <Image
+    <img
       src={imgSrc}
       alt={key}
+      decoding="async"
       width={dimensions?.width}
       height={dimensions?.height}
     />

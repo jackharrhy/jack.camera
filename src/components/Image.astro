@@ -1,7 +1,6 @@
 ---
 import { BASE_URL } from "../consts";
-import { Image as AstroImage } from "astro:assets";
-import info from "../info.json";
+import { getGalleryMedia } from "../gallery";
 
 interface Props {
   page: string;
@@ -15,8 +14,7 @@ const { page, key, ext, variant = "small", class: klass } = Astro.props;
 
 const pageKey = key.replace("assets/", "");
 
-const pageInfo = info.pages?.[page as keyof typeof info.pages];
-const photoInfo = pageInfo?.photos?.[pageKey] || pageInfo?.assets?.[pageKey];
+const photoInfo = getGalleryMedia(page, pageKey);
 
 if (!photoInfo) {
   throw new Error(`Photo or asset not found: ${page} - ${pageKey}`);
@@ -28,13 +26,15 @@ const dimensions =
 const imgBase = `${BASE_URL}/${page}`;
 
 const middle = variant === "small" ? ".small." : ".";
+const extension = ext ?? photoInfo.src.split(".").pop() ?? "jpg";
 ---
 
 <a href={`/${page}/${key.replace("/", "-")}`} style="display: contents;">
-  <AstroImage
-    src={`${imgBase}/${key}${middle}${ext ?? "jpg"}`}
+  <img
+    src={`${imgBase}/${key}${middle}${extension}`}
     alt={key}
     loading="lazy"
+    decoding="async"
     class={klass ? `${klass} clickable-image` : "clickable-image"}
     width={dimensions?.width}
     height={dimensions?.height}
