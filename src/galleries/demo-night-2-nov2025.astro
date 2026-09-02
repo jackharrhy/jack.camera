@@ -1,7 +1,7 @@
 ---
+import GalleryPage from "../components/GalleryPage.astro";
 import PhotoSection from "../components/PhotoSection.astro";
 import type { Gallery } from "../gallery";
-import "../styles/gallery.css";
 
 interface Props {
   gallery: Gallery;
@@ -10,7 +10,7 @@ interface Props {
 const { gallery } = Astro.props;
 ---
 
-<main class="gallery-page demo-night-gallery">
+<GalleryPage class="demo-night-gallery">
   <header>
     <h1>Demo Night 2</h1>
     <p class="definition">noun | /ˈdemō nīt/</p>
@@ -70,9 +70,9 @@ const { gallery } = Astro.props;
   <PhotoSection {gallery} id="mitch-presenting-1" />
   <PhotoSection {gallery} id="mitch-presenting-2" />
   <PhotoSection {gallery} id="board" />
-</main>
+</GalleryPage>
 
-<style is:global>
+<style>
   :where(.demo-night-gallery, .demo-night-gallery *) {
     box-sizing: border-box;
     margin: 0;

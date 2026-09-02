@@ -1,9 +1,12 @@
 ---
+import "../styles/global.css";
+
 export interface Props {
   title: string;
+  centerContent?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, centerContent = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,31 +23,13 @@ const { title } = Astro.props;
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <title>jack.camera - {title}</title>
   </head>
-  <body>
+  <body class:list={{ "center-content": centerContent }}>
     <slot />
-    <style is:global>
-      * {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        height: 100%;
-      }
-
-      body {
-        display: flex;
-        margin: 0;
-      }
-
-      :root {
-        font-family: "Inter", sans-serif;
-      }
-      @supports (font-variation-settings: normal) {
-        :root {
-          font-family: "Inter var", sans-serif;
-        }
-      }
-    </style>
   </body>
 </html>
+
+<style>
+  .center-content {
+    justify-content: center;
+  }
+</style>

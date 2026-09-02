@@ -1,0 +1,20 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"main"> {}
+
+const { class: className, ...attributes } = Astro.props;
+---
+
+<main class:list={["gallery-page", className]} {...attributes}>
+  <slot />
+</main>
+
+<style>
+  .gallery-page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>

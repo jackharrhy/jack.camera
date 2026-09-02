@@ -1,17 +1,19 @@
 ---
+import type { HTMLAttributes } from "astro/types";
 import type { Gallery } from "../gallery";
 import GalleryImage from "./GalleryImage.astro";
+import GallerySection from "./GallerySection.astro";
 
-interface Props {
+interface Props extends Omit<HTMLAttributes<"div">, "class" | "id"> {
   gallery: Gallery;
   id: string;
   class?: string;
   imageClass?: string;
 }
 
-const { gallery, id, class: klass, imageClass } = Astro.props;
+const { gallery, id, class: klass, imageClass, ...attributes } = Astro.props;
 ---
 
-<div class:list={["section", klass]}>
+<GallerySection class={klass} {...attributes}>
   <GalleryImage {gallery} {id} class={imageClass} />
-</div>
+</GallerySection>

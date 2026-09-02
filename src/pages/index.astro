@@ -8,7 +8,7 @@ const galleries = (await listGalleries()).filter((gallery) =>
 );
 ---
 
-<Layout title="home">
+<Layout title="home" centerContent>
   <main>
     <h1>jack.camera</h1>
     <ul>
@@ -23,10 +23,7 @@ const galleries = (await listGalleries()).filter((gallery) =>
   </main>
 </Layout>
 
-<style is:global>
-  body {
-    justify-content: center;
-  }
+<style>
   main {
     text-align: center;
   }
