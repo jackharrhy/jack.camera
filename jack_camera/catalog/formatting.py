@@ -5,3 +5,7 @@ def human_bytes(size: int) -> str:
             return f"{value:.1f} {unit}"
         value /= 1024
     raise AssertionError("unreachable")
+
+
+def human_number(value: int) -> str:
+    return f"{value:,}"

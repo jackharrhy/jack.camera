@@ -184,8 +184,9 @@ def test_catalog_web_browser_serves_lists_thumbnails_and_originals(tmp_path: Pat
     with TestClient(app) as client:
         index = client.get("/")
         assert index.status_code == 200
-        assert "2 edit folders" in index.text
-        assert "previews stored in SQLite" in index.text
+        assert "<h1>Photos</h1>" in index.text
+        assert "2 folders," in index.text
+        assert "SQLite" not in index.text
 
         filtered = client.get("/", params={"camera": "Fujifilm XT2", "year": "2025"})
         assert filtered.status_code == 200
@@ -214,6 +215,7 @@ def test_catalog_web_browser_serves_lists_thumbnails_and_originals(tmp_path: Pat
 
         assert client.get("/folders/999999").status_code == 404
         assert client.get("/thumbnails/999999").status_code == 404
+        assert client.get("/favicon.ico").status_code == 200
         assert client.get("/healthz").json() == {
             "database": True,
             "photo_root": True,

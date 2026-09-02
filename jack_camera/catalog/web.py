@@ -20,8 +20,8 @@ from jack_camera.catalog.database import (
     list_folder_files,
     list_folders,
 )
-from jack_camera.catalog.formatting import human_bytes
-from jack_camera.config import CatalogSettings
+from jack_camera.catalog.formatting import human_bytes, human_number
+from jack_camera.config import PROJECT_ROOT, CatalogSettings
 
 PACKAGE_ROOT = Path(__file__).resolve().parent
 
@@ -37,7 +37,7 @@ def require_media_file(database_path: Path, file_id: int) -> sqlite3.Row:
     finally:
         connection.close()
     if media_file is None:
-        raise HTTPException(status_code=404, detail="media file not found")
+        raise HTTPException(status_code=404, detail="file not found")
     return media_file
 
 
@@ -47,7 +47,7 @@ def resolve_original_path(settings: CatalogSettings, media_file: sqlite3.Row) ->
         photo_root / media_file["source_path"] / media_file["relative_path"]
     ).resolve()
     if not source_path.is_relative_to(photo_root) or not source_path.is_file():
-        raise HTTPException(status_code=404, detail="source file is unavailable")
+        raise HTTPException(status_code=404, detail="file is no longer available")
     return source_path
 
 
@@ -55,18 +55,23 @@ def create_app(settings: CatalogSettings | None = None) -> FastAPI:
     resolved_settings = settings or CatalogSettings.from_env()
     templates = Jinja2Templates(directory=PACKAGE_ROOT / "templates")
     templates.env.filters["filesize"] = human_bytes
+    templates.env.filters["number"] = human_number
 
     @asynccontextmanager
     async def lifespan(_: FastAPI):
         initialize_database(resolved_settings.database_path)
         yield
 
-    app = FastAPI(title="jack.camera catalog", lifespan=lifespan)
+    app = FastAPI(title="jack.camera photos", lifespan=lifespan)
     app.mount(
         "/static",
         StaticFiles(directory=PACKAGE_ROOT / "static"),
         name="static",
     )
+
+    @app.get("/favicon.ico", include_in_schema=False)
+    def favicon() -> FileResponse:
+        return FileResponse(PROJECT_ROOT / "public" / "favicon.ico")
 
     @app.get("/", response_class=HTMLResponse)
     def folder_index(
@@ -105,7 +110,7 @@ def create_app(settings: CatalogSettings | None = None) -> FastAPI:
             connection.close()
 
         if folder is None:
-            raise HTTPException(status_code=404, detail="edits folder not found")
+            raise HTTPException(status_code=404, detail="folder not found")
         return templates.TemplateResponse(
             request=request,
             name="folder.html",
@@ -120,9 +125,9 @@ def create_app(settings: CatalogSettings | None = None) -> FastAPI:
         finally:
             connection.close()
         if stored_thumbnail is None:
-            raise HTTPException(status_code=404, detail="media file not found")
+            raise HTTPException(status_code=404, detail="file not found")
         if stored_thumbnail["preview_state"] != "ready":
-            raise HTTPException(status_code=404, detail="preview is unavailable")
+            raise HTTPException(status_code=404, detail="preview not found")
         return Response(
             content=stored_thumbnail["thumbnail"],
             media_type=stored_thumbnail["thumbnail_mime"],

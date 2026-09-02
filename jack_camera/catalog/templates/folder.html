@@ -1,25 +1,25 @@
 {% extends "base.html" %}
 
-{% block title %}{{ folder.camera }} {{ folder.date_label }} / jack.camera catalog{% endblock %}
+{% block title %}{{ folder.date_label }} - {{ folder.camera }} - jack.camera{% endblock %}
 
 {% block content %}
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <a href="{{ url_for('folder_index') }}">Archive</a>
-    <span>/</span>
+    <a href="{{ url_for('folder_index') }}">Photos</a>
+    <span aria-hidden="true">/</span>
     <span>{{ folder.camera }}</span>
   </nav>
 
   <section class="folder-heading">
-    <p class="eyebrow">{{ folder.camera }}</p>
+    <p class="camera-name">{{ folder.camera }}</p>
     <h1>{{ folder.capture_date or folder.date_label }}</h1>
-    <p>{{ folder.source_path }}</p>
+    <p class="source-path"><code>{{ folder.source_path }}</code></p>
     <p class="muted">
-      {{ folder.file_count }} files / {{ folder.total_bytes | filesize }} /
-      {{ folder.preview_count }} previews
+      {{ folder.file_count | number }} files,
+      {{ folder.total_bytes | filesize }}
     </p>
   </section>
 
-  <section class="media-grid" aria-label="Files">
+  <section class="media-grid" aria-label="Folder files">
     {% for file in files %}
       <article class="media-card">
         <a
@@ -32,12 +32,18 @@
             <img
               src="{{ url_for('thumbnail', file_id=file.id) }}?v={{ file.mtime_ns }}"
               alt="{{ file.filename }}"
-              loading="lazy"
+              loading="{% if loop.first %}eager{% else %}lazy{% endif %}"
+              {% if loop.first %}fetchpriority="high"{% endif %}
             />
           {% else %}
-            <div class="preview-missing">
+            <div
+              class="preview-missing"
+              {% if file.preview_error %}title="{{ file.preview_error }}"{% endif %}
+            >
               <strong>{{ file.extension or "file" }}</strong>
-              <span>{{ file.preview_state }}</span>
+              <span>
+                {% if file.preview_state == "error" %}Could not preview{% else %}No preview{% endif %}
+              </span>
             </div>
           {% endif %}
         </a>
@@ -45,13 +51,12 @@
           <p title="{{ file.relative_path }}">{{ file.relative_path }}</p>
           <p class="muted">
             {{ file.size_bytes | filesize }}
-            {% if file.width and file.height %}/ {{ file.width }} x {{ file.height }}{% endif %}
+            {% if file.width and file.height %}, {{ file.width }} × {{ file.height }}{% endif %}
           </p>
-          {% if file.preview_error %}
-            <p class="error" title="{{ file.preview_error }}">Preview failed</p>
-          {% endif %}
         </div>
       </article>
+    {% else %}
+      <p class="empty-state">No files found.</p>
     {% endfor %}
   </section>
 {% endblock %}
