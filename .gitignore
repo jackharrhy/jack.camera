@@ -7,3 +7,4 @@ public/photos
 __pycache__/
 mise.local.toml
 .DS_Store
+.jack-camera/

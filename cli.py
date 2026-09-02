@@ -1,26 +1,25 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 import filecmp
-import os
-from pathlib import Path
 import shutil
 import tomllib
+from dataclasses import dataclass
+from pathlib import Path
 from typing import Annotated
 
-from exif import Image
-from PIL import Image as PILImage, ImageOps
-from pydantic import BaseModel, Field, field_validator
 import typer
+from exif import Image
+from PIL import Image as PILImage
+from PIL import ImageOps
+from pydantic import BaseModel, Field, field_validator
 
+from jack_camera.catalog.cli import app as catalog_app
+from jack_camera.config import DEFAULT_PHOTO_ROOT
 
 INFO_PATH = Path("info.toml")
 DATA_ROOT = Path("data")
 PHOTOS_OUTPUT = Path("public/photos")
 GENERATED_INFO_PATH = Path("src/info.json")
-DEFAULT_PHOTO_ROOT = Path(
-    os.environ.get("JACK_CAMERA_PHOTO_ROOT", "/mnt/stash/photo")
-)
 
 
 def validate_relative_path(path: Path) -> Path:
@@ -89,6 +88,7 @@ class CopyItem:
 
 
 app = typer.Typer(no_args_is_help=True)
+app.add_typer(catalog_app, name="catalog")
 
 
 def load_info(info_path: Path = INFO_PATH) -> Info:
@@ -234,14 +234,10 @@ def hydrate(
         item.destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(item.source, item.destination)
 
-    typer.echo(
-        f"Hydrated {len(to_copy)} files; {current_count} were already current."
-    )
+    typer.echo(f"Hydrated {len(to_copy)} files; {current_count} were already current.")
 
 
-def create_small_image(
-    src_path: Path, out_path: Path, max_width: int = 2000
-) -> None:
+def create_small_image(src_path: Path, out_path: Path, max_width: int = 2000) -> None:
     """Create a smaller rendition using the project's pinned Pillow dependency."""
     with PILImage.open(src_path) as source_image:
         resized_image = ImageOps.exif_transpose(source_image)
@@ -335,7 +331,9 @@ def validate_local_data(info: Info, data_root: Path) -> list[str]:
     return errors
 
 
-def process_page(page_id: str, page: Page, data_root: Path, photos_output: Path) -> None:
+def process_page(
+    page_id: str, page: Page, data_root: Path, photos_output: Path
+) -> None:
     """Create output directories and process a gallery's assets and photos."""
     src_dir = data_root / page_id
     page_outdir = photos_output / page_id

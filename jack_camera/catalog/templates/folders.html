@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="intro">
+    <h1>Photos</h1>
+    <p class="summary">
+      {{ stats.folder_count | number }} folders,
+      {{ stats.file_count | number }} files,
+      {{ stats.total_bytes | filesize }}.
+    </p>
+    {% if stats.scanned_at %}
+      <p class="muted">
+        Updated
+        <time datetime="{{ stats.scanned_at }}">
+          {{ stats.scanned_at[:16] | replace("T", " ") }} UTC
+        </time>
+      </p>
+    {% endif %}
+  </section>
+
+  <form class="filters" method="get">
+    <label>
+      Camera
+      <select name="camera">
+        <option value="">All cameras</option>
+        {% for camera in cameras %}
+          <option value="{{ camera }}" {% if camera == selected_camera %}selected{% endif %}>
+            {{ camera }}
+          </option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      Year
+      <select name="year">
+        <option value="">All years</option>
+        {% for year in years %}
+          <option value="{{ year }}" {% if year == selected_year %}selected{% endif %}>
+            {{ year }}
+          </option>
+        {% endfor %}
+      </select>
+    </label>
+    <button type="submit">Apply</button>
+    {% if selected_camera or selected_year %}
+      <a href="{{ url_for('folder_index') }}">Reset</a>
+    {% endif %}
+  </form>
+
+  <section class="folder-grid" aria-label="Folders">
+    {% for folder in folders %}
+      <a class="folder-card" href="{{ url_for('folder_detail', folder_id=folder.id) }}">
+        <figure>
+          {% if folder.cover_file_id %}
+            <img
+              src="{{ url_for('thumbnail', file_id=folder.cover_file_id) }}"
+              alt=""
+              loading="{% if loop.first %}eager{% else %}lazy{% endif %}"
+              {% if loop.first %}fetchpriority="high"{% endif %}
+            />
+          {% else %}
+            <div class="preview-missing">No preview</div>
+          {% endif %}
+        </figure>
+        <div class="folder-card-copy">
+          <p class="camera-name">{{ folder.camera }}</p>
+          <h2>{{ folder.capture_date or folder.date_label }}</h2>
+          <p class="muted">
+            {{ folder.file_count | number }} files,
+            {{ folder.total_bytes | filesize }}
+          </p>
+        </div>
+      </a>
+    {% else %}
+      <p class="empty-state">
+        {% if selected_camera or selected_year %}No folders match.{% else %}No folders yet.{% endif %}
+      </p>
+    {% endfor %}
+  </section>
+{% endblock %}

@@ -20,5 +20,19 @@ description = "Build public photo renditions and generated gallery metadata"
 run = "uv run python cli.py parse-and-produce"
 
 [tasks.check]
-description = "Type-check and build the application"
-run = ["npm run check", "npm run build"]
+description = "Check the Python tools and Astro application"
+run = [
+  "uv run ruff format --check .",
+  "uv run ruff check .",
+  "uv run python -m pytest -q",
+  "npm run check",
+  "npm run build",
+]
+
+[tasks.catalog-scan]
+description = "Refresh the local SQLite catalog from NAS edits folders"
+run = "uv run python cli.py catalog scan"
+
+[tasks.catalog-serve]
+description = "Serve the local photo catalog browser"
+run = "uv run python cli.py catalog serve"
