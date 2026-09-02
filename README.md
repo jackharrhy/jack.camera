@@ -2,6 +2,9 @@
 
 https://jack.camera/
 
+Some code here references my network NAS / CloudFlare buckets directly, so not psosible
+for others to run it locally most likely, but hey! you can still gawk at the code :)
+
 ## Setup
 
 ```sh
