@@ -10,7 +10,7 @@ interface Props {
 const { gallery } = Astro.props;
 ---
 
-<main class="gallery-page">
+<main class="gallery-page demo-night-gallery">
   <header>
     <h1>Demo Night 2</h1>
     <p class="definition">noun | /ˈdemō nīt/</p>
@@ -24,13 +24,13 @@ const { gallery } = Astro.props;
       >
     </p>
   </header>
-  <aside class="notice">
+  <div class="notice">
     <p>Read before you download!</p>
     <p>
       While the images on this page are high quality, the original (highest
       quality!) images can be accessed by clicking on the photos in this view.
     </p>
-  </aside>
+  </div>
   <PhotoSection {gallery} id="faiaz-pizza" />
   <PhotoSection {gallery} id="denny-intro-1" />
   <PhotoSection {gallery} id="denny-intro-2" />
@@ -73,47 +73,63 @@ const { gallery } = Astro.props;
 </main>
 
 <style is:global>
-  * {
+  :where(.demo-night-gallery, .demo-night-gallery *) {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  :root {
+  .demo-night-gallery {
     --background: oklch(96.47% 0.0401 157.79);
+    --secondary-background: oklch(100% 0 0);
     --foreground: oklch(0% 0 0);
+    --main-foreground: oklch(0% 0 0);
+    --main: oklch(79.76% 0.2044 153.08);
     --border: oklch(0% 0 0);
+    --ring: oklch(0% 0 0);
+    --overlay: oklch(0% 0 0 / 0.8);
+    --shadow: 2px 4px 0px 0px var(--border);
+    --chart-1: #00d696;
+    --chart-2: #ff7a05;
+    --chart-3: #09f;
+    --chart-4: #ffbf00;
+    --chart-5: #7a83ff;
+    --chart-active-dot: #000;
   }
 
-  header {
+  .demo-night-gallery > header {
     display: flex;
-    width: 100%;
-    max-width: min(42rem, 80vw);
     flex-direction: column;
     gap: 0.5rem;
     margin: 2rem 0;
-    padding: 1.5rem;
-    border: 2px solid var(--border);
+    padding: 1rem 1.5rem;
     border-radius: 0.5rem;
+    box-shadow: 3px 3px 0px 0 rgba(0, 0, 0, 1);
+    border-width: 2px;
+    border-style: solid;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-color: var(--border);
     background-color: var(--background);
-    box-shadow: 3px 3px 0 0 var(--border);
-    color: var(--foreground);
+    color: var(--foreground, #111);
+    width: 100%;
+    max-width: min(42rem, 80vw);
   }
 
-  header .definition {
-    color: var(--foreground);
+  .demo-night-gallery > header .definition {
     font-size: 0.8rem;
     font-style: italic;
+    color: var(--foreground, #111);
   }
 
-  .notice {
+  .demo-night-gallery .notice {
     display: flex;
-    max-width: min(38rem, 70vw);
     flex-direction: column;
     gap: 1rem;
+    max-width: min(38rem, 70vw);
   }
 
-  .notice p:first-child {
+  .demo-night-gallery .notice p:first-child {
     font-size: 1.2rem;
     font-weight: 600;
     text-align: center;

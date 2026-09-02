@@ -12,6 +12,6 @@ interface Props {
 const { gallery, id, class: klass, imageClass } = Astro.props;
 ---
 
-<section class:list={["photo-section", klass]}>
+<div class:list={["section", klass]}>
   <GalleryImage {gallery} {id} class={imageClass} />
-</section>
+</div>
