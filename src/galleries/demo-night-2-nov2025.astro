@@ -1,0 +1,121 @@
+---
+import PhotoSection from "../components/PhotoSection.astro";
+import type { Gallery } from "../gallery";
+import "../styles/gallery.css";
+
+interface Props {
+  gallery: Gallery;
+}
+
+const { gallery } = Astro.props;
+---
+
+<main class="gallery-page">
+  <header>
+    <h1>Demo Night 2</h1>
+    <p class="definition">noun | /ˈdemō nīt/</p>
+    <p>
+      A meet up focused around short talks & demos, by professionals, for
+      professionals.
+    </p>
+    <p>
+      Learn more on the main website: <a
+        href="https://ethandenny.dev/demo-night/">ethandenny.dev/demo-night</a
+      >
+    </p>
+  </header>
+  <aside class="notice">
+    <p>Read before you download!</p>
+    <p>
+      While the images on this page are high quality, the original (highest
+      quality!) images can be accessed by clicking on the photos in this view.
+    </p>
+  </aside>
+  <PhotoSection {gallery} id="faiaz-pizza" />
+  <PhotoSection {gallery} id="denny-intro-1" />
+  <PhotoSection {gallery} id="denny-intro-2" />
+  <PhotoSection {gallery} id="dan-listening" />
+  <PhotoSection {gallery} id="rowan-locked-in" />
+  <PhotoSection {gallery} id="riley-with-brainz" />
+  <PhotoSection {gallery} id="riley-shout" />
+  <PhotoSection {gallery} id="riley-and-spaghetti" />
+  <PhotoSection {gallery} id="locked-in-onlookers" />
+  <PhotoSection {gallery} id="thomas-presenting-1" />
+  <PhotoSection {gallery} id="thomas-presenting-2" />
+  <PhotoSection {gallery} id="faiaz-presenting" />
+  <PhotoSection {gallery} id="pensive-amin" />
+  <PhotoSection {gallery} id="honour-presenting-1" />
+  <PhotoSection {gallery} id="honour-presenting-2" />
+  <PhotoSection {gallery} id="more-pensive" />
+  <PhotoSection {gallery} id="amin-presenting-1" />
+  <PhotoSection {gallery} id="amin-presenting-2" />
+  <PhotoSection {gallery} id="natalie-perched" />
+  <PhotoSection {gallery} id="nick-presenting-1" />
+  <PhotoSection {gallery} id="nick-presenting-2" />
+  <PhotoSection {gallery} id="focused-onlookers" />
+  <PhotoSection {gallery} id="denny-listening" />
+  <PhotoSection {gallery} id="alex-presenting-1" />
+  <PhotoSection {gallery} id="alex-presenting-2" />
+  <PhotoSection {gallery} id="fume-presenting-1" />
+  <PhotoSection {gallery} id="fume-presenting-2" />
+  <PhotoSection {gallery} id="leah-listening" />
+  <PhotoSection {gallery} id="natalie-presenting-1" />
+  <PhotoSection {gallery} id="natalie-presenting-2" />
+  <PhotoSection {gallery} id="evan-presenting-1" />
+  <PhotoSection {gallery} id="evan-presenting-2" />
+  <PhotoSection {gallery} id="hurtis-presenting-1" />
+  <PhotoSection {gallery} id="sven-programming" />
+  <PhotoSection {gallery} id="rowan-presenting" />
+  <PhotoSection {gallery} id="emmanuel-pondering" />
+  <PhotoSection {gallery} id="mitch-presenting-1" />
+  <PhotoSection {gallery} id="mitch-presenting-2" />
+  <PhotoSection {gallery} id="board" />
+</main>
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --background: oklch(96.47% 0.0401 157.79);
+    --foreground: oklch(0% 0 0);
+    --border: oklch(0% 0 0);
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    max-width: min(42rem, 80vw);
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+    background-color: var(--background);
+    box-shadow: 3px 3px 0 0 var(--border);
+    color: var(--foreground);
+  }
+
+  header .definition {
+    color: var(--foreground);
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+
+  .notice {
+    display: flex;
+    max-width: min(38rem, 70vw);
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .notice p:first-child {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+</style>

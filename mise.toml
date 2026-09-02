@@ -1,5 +1,6 @@
 [tools]
 node = "24.20.0"
+rclone = "1.75.0"
 uv = "0.12.8"
 
 [tasks.setup]
@@ -9,6 +10,14 @@ run = ["npm ci", "uv sync --locked"]
 [tasks.dev]
 description = "Start the Astro development server"
 run = "npm run dev"
+
+[tasks.hydrate]
+description = "Copy selected gallery sources from the NAS into local data"
+run = "uv run python cli.py hydrate"
+
+[tasks.produce]
+description = "Build public photo renditions and generated gallery metadata"
+run = "uv run python cli.py parse-and-produce"
 
 [tasks.check]
 description = "Type-check and build the application"

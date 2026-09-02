@@ -1,0 +1,25 @@
+---
+import type { GetStaticPaths } from "astro";
+
+import { requireGallery } from "../gallery";
+import { galleryViews, hasGalleryView } from "../gallery-views";
+import Layout from "../layouts/Layout.astro";
+
+export const getStaticPaths = (() =>
+  Object.keys(galleryViews).map((gallery) => ({
+    params: { gallery },
+  }))) satisfies GetStaticPaths;
+
+const { gallery: galleryId } = Astro.params;
+
+if (!galleryId || !hasGalleryView(galleryId)) {
+  throw new Error(`Gallery view not found: ${galleryId ?? "missing id"}`);
+}
+
+const gallery = await requireGallery(galleryId);
+const { default: GalleryView } = await galleryViews[galleryId]();
+---
+
+<Layout title={gallery.data.title}>
+  <GalleryView {gallery} />
+</Layout>

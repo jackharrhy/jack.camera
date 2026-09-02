@@ -1,7 +1,7 @@
 [pages.fly-fest-oct2022]
 title = "Fly Festival - October 2022"
 date = "2022-10-29"
-location = "local:./data/fly-fest-oct2022"
+source = "Fujifilm XT2/2022-10-29/edits"
 
 [pages.fly-fest-oct2022.assets]
 cd-andrew-smith = { src = "assets/cd-andrew-smith.jpg" }
@@ -82,8 +82,8 @@ organizers = { src = "DSCF0611.jpg" }
 
 [pages.demo-night-2-nov2025]
 title = "Demo Night 2 - November 2025"
-date = "2025-11-02"
-location = "local:./data/demo-night-2-nov2025"
+date = "2025-11-22"
+source = "Fujifilm XT2/2025-11-22/edits"
 
 [pages.demo-night-2-nov2025.photos]
 faiaz-pizza = { src = "DSCF0837.jpg" }

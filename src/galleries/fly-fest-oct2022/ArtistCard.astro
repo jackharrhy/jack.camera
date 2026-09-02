@@ -1,0 +1,53 @@
+---
+import GalleryImage from "../../components/GalleryImage.astro";
+import type { Gallery } from "../../gallery";
+
+interface Props {
+  gallery: Gallery;
+  asset: string;
+  href: string;
+  label: string;
+}
+
+const { gallery, asset, href, label } = Astro.props;
+---
+
+<section class="artist-card">
+  <GalleryImage {gallery} id={asset} kind="assets" variant="full" />
+  <a {href}>
+    <p>📷 {label}</p>
+  </a>
+</section>
+
+<style>
+  .artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    margin: 5rem 0 1rem;
+    padding: 4rem 1rem;
+    font-size: 1.5rem;
+  }
+
+  .artist-card > a {
+    text-decoration: none;
+  }
+
+  .artist-card :global(img) {
+    max-height: 50vh;
+    max-width: 100%;
+    animation: artist-card-sway 12s ease-in-out infinite;
+  }
+
+  @keyframes artist-card-sway {
+    0%,
+    100% {
+      transform: rotate(4deg);
+    }
+    50% {
+      transform: rotate(-4deg);
+    }
+  }
+</style>

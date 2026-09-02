@@ -1,0 +1,373 @@
+---
+import GalleryImage from "../components/GalleryImage.astro";
+import PhotoSection from "../components/PhotoSection.astro";
+import {
+  mediaFileUrl,
+  requireGalleryMedia,
+  type Gallery,
+} from "../gallery";
+import "../styles/gallery.css";
+import ArtistCard from "./fly-fest-oct2022/ArtistCard.astro";
+
+interface Props {
+  gallery: Gallery;
+}
+
+const { gallery } = Astro.props;
+
+const wallpaperId = "flyfest-overall-wellness-wallpaper";
+const wallpaper = requireGalleryMedia(gallery, "assets", wallpaperId);
+const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
+---
+
+<main class="gallery-page">
+    <header>
+      <GalleryImage
+        {gallery}
+        id="poster"
+        kind="assets"
+        alt="Fly Festival poster"
+      />
+      <p>
+        photos from fly festival, from the camera & website of <a
+          href="https://jackharrhy.dev">jack harrhy</a
+        >
+      </p>
+    </header>
+
+    <aside class="notice">
+      <p>NOTICE!</p>
+      <div>
+        <p>
+          the original (high quality) images can be accessed by clicking on the
+          photos in this view (which will bring you to a subpage),
+        </p>
+        <p>
+          if you plan on posting any of these, make sure you use these instead
+          of the versions on this page &lt;3
+        </p>
+      </div>
+      <p>NOTICE!</p>
+    </aside>
+
+    <section class="photo-section photo-pair posters">
+      <div>
+        <GalleryImage {gallery} id="poster-alt" kind="assets" />
+        <GalleryImage {gallery} id="poster-on-pole" />
+      </div>
+    </section>
+
+    <ArtistCard
+      {gallery}
+      asset="cd-andrew-smith"
+      href="https://www.instagram.com/andrwsmth0/"
+      label="@andrwsmth0"
+    />
+    <PhotoSection {gallery} id="andrew-vert-flare" />
+    <PhotoSection {gallery} id="andrew-vert-flare-alt" />
+    <section class="insert dino">
+      <GalleryImage {gallery} id="dino" />
+    </section>
+    <PhotoSection {gallery} id="andrew-crowd-front" />
+    <PhotoSection {gallery} id="andrew-crowd-side" />
+    <PhotoSection {gallery} id="andrew-front" />
+
+    <ArtistCard
+      {gallery}
+      asset="cd-greta"
+      href="https://www.instagram.com/gretaandthegoldfish/"
+      label="@gretaandthegoldfish"
+    />
+    <PhotoSection {gallery} id="greta-setup" />
+    <PhotoSection {gallery} id="greta-christian-vert" />
+    <PhotoSection {gallery} id="greta-herself-vert" />
+    <PhotoSection {gallery} id="greta-herself-front" />
+    <PhotoSection {gallery} id="greta-christian-front" />
+    <PhotoSection {gallery} id="greta-aidan-sing-keeb" />
+    <PhotoSection {gallery} id="greta-raine-vert" />
+    <PhotoSection {gallery} id="greta-aidan-vert" />
+    <PhotoSection {gallery} id="greta-crowd" />
+    <PhotoSection {gallery} id="greta-crowd-zoom" />
+    <PhotoSection {gallery} id="greta-crowd-behind" />
+    <PhotoSection {gallery} id="greta-crowd-behind-flare" />
+
+    <div class="headstone" aria-hidden="true">🪦</div>
+    <PhotoSection {gallery} id="zombie-crowd-1" class="zombie" />
+    <PhotoSection {gallery} id="zombie-crowd-2" class="zombie" />
+    <PhotoSection {gallery} id="zombie-closeup" class="zombie" />
+    <PhotoSection {gallery} id="zombie-dead" class="zombie" />
+    <div class="headstone" aria-hidden="true">🪦</div>
+
+    <ArtistCard
+      {gallery}
+      asset="cd-cuperos"
+      href="https://www.instagram.com/cuerpos_bodies/"
+      label="@cuerpos_bodies"
+    />
+    <PhotoSection {gallery} id="cuperos-front-setup" />
+    <PhotoSection {gallery} id="cuperos-side" />
+    <PhotoSection {gallery} id="cuperos-francis-keeb" />
+    <PhotoSection {gallery} id="cuperos-francis-keeb-closer" />
+    <PhotoSection {gallery} id="cuperos-nadia" />
+    <PhotoSection {gallery} id="cuperos-front-playing" />
+    <section class="photo-section photo-pair knobs">
+      <div>
+        <GalleryImage
+          {gallery}
+          id="cuperos-james-with-knobs-vert"
+          class="small"
+        />
+        <GalleryImage {gallery} id="cuperos-james-with-knobs" />
+      </div>
+    </section>
+    <PhotoSection {gallery} id="cuperos-nadia-vert" />
+    <PhotoSection {gallery} id="cuperos-side-alt" />
+    <section class="photo-section sparkles">
+      <span aria-hidden="true">✨</span>
+      <GalleryImage {gallery} id="cayley-and-emma" />
+      <span aria-hidden="true">✨</span>
+    </section>
+    <section class="insert stickers">
+      <GalleryImage {gallery} id="stickers" />
+    </section>
+
+    <ArtistCard
+      {gallery}
+      asset="cd-lexi"
+      href="https://www.instagram.com/lexihicksmusic/"
+      label="@lexihicksmusic"
+    />
+    <PhotoSection {gallery} id="lexi-herself-setup" />
+    <section class="photo-section photo-pair chris-setup">
+      <div>
+        <GalleryImage
+          {gallery}
+          id="lexi-chris-setup-behind"
+          class="small"
+        />
+        <GalleryImage {gallery} id="lexi-chris-setup" />
+      </div>
+    </section>
+    <PhotoSection {gallery} id="lexi-setup" />
+    <PhotoSection {gallery} id="lexi-aidan-setup" />
+    <PhotoSection {gallery} id="lexi-front" />
+    <PhotoSection {gallery} id="lexi-side" />
+    <PhotoSection {gallery} id="lexi-raine" />
+    <PhotoSection {gallery} id="lexi-front-darker" />
+    <section class="photo-section trading">
+      <GalleryImage {gallery} id="trading" kind="assets" />
+    </section>
+
+    <ArtistCard
+      {gallery}
+      asset="cd-weary"
+      href="https://www.instagram.com/wearyband/"
+      label="@wearyband"
+    />
+    <PhotoSection {gallery} id="weary-side" />
+    <PhotoSection {gallery} id="weary-christopher-side" />
+    <PhotoSection {gallery} id="weary-christopher-front" />
+    <PhotoSection {gallery} id="weary-kate-front" />
+    <PhotoSection {gallery} id="weary-meg" />
+    <PhotoSection {gallery} id="weary-front" />
+
+    <ArtistCard
+      {gallery}
+      asset="cd-planes"
+      href="https://www.instagram.com/imaginary.planes/"
+      label="@imaginary.planes"
+    />
+    <PhotoSection {gallery} id="planes-james-front" />
+    <section class="photo-section photo-pair planes-double">
+      <div>
+        <GalleryImage {gallery} id="planes-raine-front" class="short" />
+        <GalleryImage {gallery} id="planes-james-flare" />
+      </div>
+    </section>
+    <section class="photo-section photo-pair planes-double">
+      <div>
+        <GalleryImage {gallery} id="planes-raine-side" />
+        <GalleryImage {gallery} id="planes-nick" class="short" />
+      </div>
+    </section>
+    <PhotoSection {gallery} id="planes-front" />
+    <PhotoSection {gallery} id="planes-side" />
+    <PhotoSection {gallery} id="planes-nick-alt" />
+    <PhotoSection {gallery} id="planes-james-sing-front" />
+    <PhotoSection {gallery} id="planes-side-alt" />
+
+    <ArtistCard
+      {gallery}
+      asset="porta-fly-fest"
+      href="https://www.instagram.com/flyfestnl/"
+      label="@flyfestnl"
+    />
+    <PhotoSection {gallery} id="organizers" />
+
+    <section class="photo-section wellness">
+      <GalleryImage {gallery} id="overall-wellness" kind="assets" />
+      <a href={wallpaperUrl} download="flyfest-overall-wellness-wallpaper.png">
+        <button>download desktop wallpaper</button>
+      </a>
+    </section>
+</main>
+
+<style is:global>
+  header {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  header img {
+    max-width: 100%;
+    max-height: 85%;
+  }
+
+  header p {
+    padding: 0 1rem;
+  }
+
+  .notice {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+
+  .notice > p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .photo-pair > div {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 2 / 1.6;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .photo-pair img {
+    margin: 0 1rem;
+  }
+
+  .posters {
+    padding: 4rem;
+    background-color: #191c1d;
+  }
+
+  .posters img {
+    aspect-ratio: 2.5 / 4;
+  }
+
+  .knobs > div {
+    aspect-ratio: 5 / 3;
+  }
+
+  .knobs .small,
+  .chris-setup .small {
+    height: 50%;
+  }
+
+  .planes-double > div {
+    aspect-ratio: 5.1 / 3;
+  }
+
+  .planes-double .short {
+    height: 70%;
+  }
+
+  .sparkles span {
+    margin: 1rem 4rem;
+    font-size: 5rem;
+  }
+
+  .insert {
+    display: flex;
+    max-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+
+  .insert img {
+    max-width: 100%;
+    max-height: 60%;
+  }
+
+  .dino img {
+    border: 4px solid #d27b4f;
+  }
+
+  .stickers img {
+    border: 5px solid #dc9400;
+  }
+
+  .trading img {
+    height: 50%;
+    transform: rotate(-2deg);
+    transition: all 0.35s ease-out;
+  }
+
+  .trading img:hover {
+    transform: scale(1.5) rotate(-1deg);
+  }
+
+  .headstone {
+    margin: 2rem 0;
+    font-size: 6rem;
+  }
+
+  .zombie {
+    background-color: black;
+  }
+
+  .wellness {
+    flex-direction: column;
+    margin-top: 15rem;
+  }
+
+  .wellness img {
+    height: 50%;
+  }
+
+  .wellness button {
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-family: monospace;
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: 1200px) {
+    header,
+    .insert {
+      height: auto;
+    }
+
+    .sparkles,
+    .photo-pair {
+      flex-direction: column;
+    }
+
+    .sparkles img {
+      max-height: 75%;
+    }
+
+    .posters img {
+      margin: 1rem;
+    }
+  }
+</style>

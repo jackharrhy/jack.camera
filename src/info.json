@@ -3,7 +3,6 @@
     "fly-fest-oct2022": {
       "title": "Fly Festival - October 2022",
       "date": "2022-10-29",
-      "location": "local:./data/fly-fest-oct2022",
       "photos": {
         "poster-on-pole": {
           "src": "DSCF9730.jpg",
@@ -1051,8 +1050,8 @@
             "height": 827
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 827,
+            "height": 827
           }
         },
         "cd-cuperos": {
@@ -1062,8 +1061,8 @@
             "height": 827
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 827,
+            "height": 827
           }
         },
         "cd-greta": {
@@ -1073,8 +1072,8 @@
             "height": 827
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 827,
+            "height": 827
           }
         },
         "cd-lexi": {
@@ -1084,8 +1083,8 @@
             "height": 827
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 827,
+            "height": 827
           }
         },
         "cd-planes": {
@@ -1095,8 +1094,8 @@
             "height": 827
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 827,
+            "height": 827
           }
         },
         "cd-weary": {
@@ -1106,8 +1105,8 @@
             "height": 827
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 827,
+            "height": 827
           }
         },
         "overall-wellness": {
@@ -1128,8 +1127,8 @@
             "height": 808
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 2000
+            "width": 808,
+            "height": 808
           }
         },
         "poster-alt": {
@@ -1161,8 +1160,8 @@
             "height": 1800
           },
           "small_dimensions": {
-            "width": 2000,
-            "height": 3000
+            "width": 1200,
+            "height": 1800
           }
         },
         "flyfest-overall-wellness-wallpaper": {
@@ -1180,8 +1179,7 @@
     },
     "demo-night-2-nov2025": {
       "title": "Demo Night 2 - November 2025",
-      "date": "2025-11-02",
-      "location": "local:./data/demo-night-2-nov2025",
+      "date": "2025-11-22",
       "photos": {
         "faiaz-pizza": {
           "src": "DSCF0837.jpg",
