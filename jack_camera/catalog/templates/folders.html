@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="intro">
+    <p class="eyebrow">Archive index</p>
+    <h1>{{ stats.folder_count }} edit folders</h1>
+    <p>
+      {{ stats.file_count }} files, {{ stats.total_bytes | filesize }}, with
+      {{ stats.preview_count }} previews stored in SQLite.
+    </p>
+    {% if stats.scanned_at %}
+      <p class="muted">
+        Last scanned
+        <time datetime="{{ stats.scanned_at }}">
+          {{ stats.scanned_at[:16] | replace("T", " ") }} UTC
+        </time>
+      </p>
+    {% endif %}
+  </section>
+
+  <form class="filters" method="get">
+    <label>
+      Camera
+      <select name="camera">
+        <option value="">All cameras</option>
+        {% for camera in cameras %}
+          <option value="{{ camera }}" {% if camera == selected_camera %}selected{% endif %}>
+            {{ camera }}
+          </option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      Year
+      <select name="year">
+        <option value="">All years</option>
+        {% for year in years %}
+          <option value="{{ year }}" {% if year == selected_year %}selected{% endif %}>
+            {{ year }}
+          </option>
+        {% endfor %}
+      </select>
+    </label>
+    <button type="submit">Filter</button>
+    {% if selected_camera or selected_year %}
+      <a href="{{ url_for('folder_index') }}">Clear</a>
+    {% endif %}
+  </form>
+
+  <section class="folder-grid" aria-label="Edit folders">
+    {% for folder in folders %}
+      <a class="folder-card" href="{{ url_for('folder_detail', folder_id=folder.id) }}">
+        <figure>
+          {% if folder.cover_file_id %}
+            <img
+              src="{{ url_for('thumbnail', file_id=folder.cover_file_id) }}"
+              alt=""
+              loading="lazy"
+            />
+          {% else %}
+            <div class="preview-missing">No preview</div>
+          {% endif %}
+        </figure>
+        <div class="folder-card-copy">
+          <p>{{ folder.camera }}</p>
+          <h2>{{ folder.capture_date or folder.date_label }}</h2>
+          <p class="muted">
+            {{ folder.file_count }} files / {{ folder.total_bytes | filesize }}
+          </p>
+        </div>
+      </a>
+    {% else %}
+      <p>No edit folders match these filters.</p>
+    {% endfor %}
+  </section>
+{% endblock %}
