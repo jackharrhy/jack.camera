@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.photo-section {
+.section {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -14,7 +14,7 @@
   padding: 4rem 2rem;
 }
 
-.photo-section img {
+.section img {
   width: auto;
   height: auto;
   max-width: 100%;
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 1200px) {
-  .photo-section {
+  .section {
     height: auto;
   }
 }

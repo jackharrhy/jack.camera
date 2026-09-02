@@ -245,10 +245,10 @@ def create_small_image(
     """Create a smaller rendition using the project's pinned Pillow dependency."""
     with PILImage.open(src_path) as source_image:
         resized_image = ImageOps.exif_transpose(source_image)
-        if resized_image.width > max_width:
-            resized_image.thumbnail(
-                (max_width, resized_image.height), PILImage.Resampling.LANCZOS
-            )
+        resized_height = round(resized_image.height * max_width / resized_image.width)
+        resized_image = resized_image.resize(
+            (max_width, resized_height), PILImage.Resampling.LANCZOS
+        )
 
         save_options: dict[str, bool | int] = {"optimize": True}
         if out_path.suffix.lower() in {".jpg", ".jpeg"}:
