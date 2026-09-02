@@ -1,0 +1,17 @@
+---
+import type { Gallery } from "../gallery";
+import GalleryImage from "./GalleryImage.astro";
+
+interface Props {
+  gallery: Gallery;
+  id: string;
+  class?: string;
+  imageClass?: string;
+}
+
+const { gallery, id, class: klass, imageClass } = Astro.props;
+---
+
+<section class:list={["photo-section", klass]}>
+  <GalleryImage {gallery} {id} class={imageClass} />
+</section>

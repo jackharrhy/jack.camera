@@ -1,0 +1,61 @@
+---
+import type { Gallery, GalleryMediaKind } from "../gallery";
+import {
+  mediaAlt,
+  mediaDetailPath,
+  mediaFileUrl,
+  requireGalleryMedia,
+} from "../gallery";
+
+interface Props {
+  gallery: Gallery;
+  id: string;
+  kind?: GalleryMediaKind;
+  variant?: "small" | "full";
+  alt?: string;
+  class?: string;
+}
+
+const {
+  gallery,
+  id,
+  kind = "photos",
+  variant = "small",
+  alt = mediaAlt(id),
+  class: klass,
+} = Astro.props;
+
+const media = requireGalleryMedia(gallery, kind, id);
+const dimensions =
+  variant === "small" ? media.data.small_dimensions : media.data.dimensions;
+---
+
+<a href={mediaDetailPath(gallery, kind, id)} data-gallery-image>
+  <img
+    src={mediaFileUrl(gallery, media, variant)}
+    {alt}
+    loading="lazy"
+    decoding="async"
+    class={klass}
+    width={dimensions.width}
+    height={dimensions.height}
+  />
+</a>
+
+<style>
+  a {
+    display: contents;
+  }
+</style>
+
+<script>
+  document.addEventListener("contextmenu", (event) => {
+    if (!(event.target instanceof HTMLImageElement)) return;
+
+    const link = event.target.closest<HTMLAnchorElement>("a[data-gallery-image]");
+    if (!link) return;
+
+    event.preventDefault();
+    link.click();
+  });
+</script>

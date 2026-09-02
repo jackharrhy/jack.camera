@@ -1,17 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { listGalleries } from "../gallery";
+import { hasGalleryView } from "../gallery-views";
+
+const galleries = (await listGalleries()).filter((gallery) =>
+  hasGalleryView(gallery.id),
+);
 ---
 
 <Layout title="home">
   <main>
     <h1>jack.camera</h1>
     <ul>
-      <a href="./demo-night-2-nov2025">
-        <li>Demo Night 2 - November 2025</li>
-      </a>
-      <a href="./fly-fest-oct2022">
-        <li>Fly Festival - October 2022</li>
-      </a>
+      {
+        galleries.map((gallery) => (
+          <li>
+            <a href={`/${gallery.id}`}>{gallery.data.title}</a>
+          </li>
+        ))
+      }
     </ul>
   </main>
 </Layout>
