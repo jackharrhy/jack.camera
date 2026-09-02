@@ -8,7 +8,6 @@ interface Props {
 }
 
 const { gallery } = Astro.props;
-const photoIds = Object.keys(gallery.data.photos);
 ---
 
 <main class="gallery-page">
@@ -32,7 +31,45 @@ const photoIds = Object.keys(gallery.data.photos);
       quality!) images can be accessed by clicking on the photos in this view.
     </p>
   </aside>
-  {photoIds.map((id) => <PhotoSection {gallery} {id} />)}
+  <PhotoSection {gallery} id="faiaz-pizza" />
+  <PhotoSection {gallery} id="denny-intro-1" />
+  <PhotoSection {gallery} id="denny-intro-2" />
+  <PhotoSection {gallery} id="dan-listening" />
+  <PhotoSection {gallery} id="rowan-locked-in" />
+  <PhotoSection {gallery} id="riley-with-brainz" />
+  <PhotoSection {gallery} id="riley-shout" />
+  <PhotoSection {gallery} id="riley-and-spaghetti" />
+  <PhotoSection {gallery} id="locked-in-onlookers" />
+  <PhotoSection {gallery} id="thomas-presenting-1" />
+  <PhotoSection {gallery} id="thomas-presenting-2" />
+  <PhotoSection {gallery} id="faiaz-presenting" />
+  <PhotoSection {gallery} id="pensive-amin" />
+  <PhotoSection {gallery} id="honour-presenting-1" />
+  <PhotoSection {gallery} id="honour-presenting-2" />
+  <PhotoSection {gallery} id="more-pensive" />
+  <PhotoSection {gallery} id="amin-presenting-1" />
+  <PhotoSection {gallery} id="amin-presenting-2" />
+  <PhotoSection {gallery} id="natalie-perched" />
+  <PhotoSection {gallery} id="nick-presenting-1" />
+  <PhotoSection {gallery} id="nick-presenting-2" />
+  <PhotoSection {gallery} id="focused-onlookers" />
+  <PhotoSection {gallery} id="denny-listening" />
+  <PhotoSection {gallery} id="alex-presenting-1" />
+  <PhotoSection {gallery} id="alex-presenting-2" />
+  <PhotoSection {gallery} id="fume-presenting-1" />
+  <PhotoSection {gallery} id="fume-presenting-2" />
+  <PhotoSection {gallery} id="leah-listening" />
+  <PhotoSection {gallery} id="natalie-presenting-1" />
+  <PhotoSection {gallery} id="natalie-presenting-2" />
+  <PhotoSection {gallery} id="evan-presenting-1" />
+  <PhotoSection {gallery} id="evan-presenting-2" />
+  <PhotoSection {gallery} id="hurtis-presenting-1" />
+  <PhotoSection {gallery} id="sven-programming" />
+  <PhotoSection {gallery} id="rowan-presenting" />
+  <PhotoSection {gallery} id="emmanuel-pondering" />
+  <PhotoSection {gallery} id="mitch-presenting-1" />
+  <PhotoSection {gallery} id="mitch-presenting-2" />
+  <PhotoSection {gallery} id="board" />
 </main>
 
 <style is:global>

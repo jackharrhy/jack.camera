@@ -1,5 +1,4 @@
 ---
-import ArtistCard from "../components/ArtistCard.astro";
 import GalleryImage from "../components/GalleryImage.astro";
 import PhotoSection from "../components/PhotoSection.astro";
 import {
@@ -8,78 +7,13 @@ import {
   type Gallery,
 } from "../gallery";
 import "../styles/gallery.css";
+import ArtistCard from "./fly-fest-oct2022/ArtistCard.astro";
 
 interface Props {
   gallery: Gallery;
 }
 
 const { gallery } = Astro.props;
-
-const andrewPhotos = [
-  "andrew-vert-flare",
-  "andrew-vert-flare-alt",
-] as const;
-const andrewCrowdPhotos = [
-  "andrew-crowd-front",
-  "andrew-crowd-side",
-  "andrew-front",
-] as const;
-const gretaPhotos = [
-  "greta-setup",
-  "greta-christian-vert",
-  "greta-herself-vert",
-  "greta-herself-front",
-  "greta-christian-front",
-  "greta-aidan-sing-keeb",
-  "greta-raine-vert",
-  "greta-aidan-vert",
-  "greta-crowd",
-  "greta-crowd-zoom",
-  "greta-crowd-behind",
-  "greta-crowd-behind-flare",
-] as const;
-const zombiePhotos = [
-  "zombie-crowd-1",
-  "zombie-crowd-2",
-  "zombie-closeup",
-  "zombie-dead",
-] as const;
-const cuperosPhotos = [
-  "cuperos-front-setup",
-  "cuperos-side",
-  "cuperos-francis-keeb",
-  "cuperos-francis-keeb-closer",
-  "cuperos-nadia",
-  "cuperos-front-playing",
-] as const;
-const cuperosClosingPhotos = [
-  "cuperos-nadia-vert",
-  "cuperos-side-alt",
-] as const;
-const lexiPhotos = ["lexi-herself-setup"] as const;
-const lexiClosingPhotos = [
-  "lexi-setup",
-  "lexi-aidan-setup",
-  "lexi-front",
-  "lexi-side",
-  "lexi-raine",
-  "lexi-front-darker",
-] as const;
-const wearyPhotos = [
-  "weary-side",
-  "weary-christopher-side",
-  "weary-christopher-front",
-  "weary-kate-front",
-  "weary-meg",
-  "weary-front",
-] as const;
-const planesClosingPhotos = [
-  "planes-front",
-  "planes-side",
-  "planes-nick-alt",
-  "planes-james-sing-front",
-  "planes-side-alt",
-] as const;
 
 const wallpaperId = "flyfest-overall-wellness-wallpaper";
 const wallpaper = requireGalleryMedia(gallery, "assets", wallpaperId);
@@ -129,11 +63,14 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
       href="https://www.instagram.com/andrwsmth0/"
       label="@andrwsmth0"
     />
-    {andrewPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="andrew-vert-flare" />
+    <PhotoSection {gallery} id="andrew-vert-flare-alt" />
     <section class="insert dino">
       <GalleryImage {gallery} id="dino" />
     </section>
-    {andrewCrowdPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="andrew-crowd-front" />
+    <PhotoSection {gallery} id="andrew-crowd-side" />
+    <PhotoSection {gallery} id="andrew-front" />
 
     <ArtistCard
       {gallery}
@@ -141,14 +78,24 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
       href="https://www.instagram.com/gretaandthegoldfish/"
       label="@gretaandthegoldfish"
     />
-    {gretaPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="greta-setup" />
+    <PhotoSection {gallery} id="greta-christian-vert" />
+    <PhotoSection {gallery} id="greta-herself-vert" />
+    <PhotoSection {gallery} id="greta-herself-front" />
+    <PhotoSection {gallery} id="greta-christian-front" />
+    <PhotoSection {gallery} id="greta-aidan-sing-keeb" />
+    <PhotoSection {gallery} id="greta-raine-vert" />
+    <PhotoSection {gallery} id="greta-aidan-vert" />
+    <PhotoSection {gallery} id="greta-crowd" />
+    <PhotoSection {gallery} id="greta-crowd-zoom" />
+    <PhotoSection {gallery} id="greta-crowd-behind" />
+    <PhotoSection {gallery} id="greta-crowd-behind-flare" />
 
     <div class="headstone" aria-hidden="true">🪦</div>
-    {
-      zombiePhotos.map((id) => (
-        <PhotoSection {gallery} {id} class="zombie" />
-      ))
-    }
+    <PhotoSection {gallery} id="zombie-crowd-1" class="zombie" />
+    <PhotoSection {gallery} id="zombie-crowd-2" class="zombie" />
+    <PhotoSection {gallery} id="zombie-closeup" class="zombie" />
+    <PhotoSection {gallery} id="zombie-dead" class="zombie" />
     <div class="headstone" aria-hidden="true">🪦</div>
 
     <ArtistCard
@@ -157,7 +104,12 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
       href="https://www.instagram.com/cuerpos_bodies/"
       label="@cuerpos_bodies"
     />
-    {cuperosPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="cuperos-front-setup" />
+    <PhotoSection {gallery} id="cuperos-side" />
+    <PhotoSection {gallery} id="cuperos-francis-keeb" />
+    <PhotoSection {gallery} id="cuperos-francis-keeb-closer" />
+    <PhotoSection {gallery} id="cuperos-nadia" />
+    <PhotoSection {gallery} id="cuperos-front-playing" />
     <section class="photo-section photo-pair knobs">
       <div>
         <GalleryImage
@@ -168,7 +120,8 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
         <GalleryImage {gallery} id="cuperos-james-with-knobs" />
       </div>
     </section>
-    {cuperosClosingPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="cuperos-nadia-vert" />
+    <PhotoSection {gallery} id="cuperos-side-alt" />
     <section class="photo-section sparkles">
       <span aria-hidden="true">✨</span>
       <GalleryImage {gallery} id="cayley-and-emma" />
@@ -184,7 +137,7 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
       href="https://www.instagram.com/lexihicksmusic/"
       label="@lexihicksmusic"
     />
-    {lexiPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="lexi-herself-setup" />
     <section class="photo-section photo-pair chris-setup">
       <div>
         <GalleryImage
@@ -195,7 +148,12 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
         <GalleryImage {gallery} id="lexi-chris-setup" />
       </div>
     </section>
-    {lexiClosingPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="lexi-setup" />
+    <PhotoSection {gallery} id="lexi-aidan-setup" />
+    <PhotoSection {gallery} id="lexi-front" />
+    <PhotoSection {gallery} id="lexi-side" />
+    <PhotoSection {gallery} id="lexi-raine" />
+    <PhotoSection {gallery} id="lexi-front-darker" />
     <section class="photo-section trading">
       <GalleryImage {gallery} id="trading" kind="assets" />
     </section>
@@ -206,7 +164,12 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
       href="https://www.instagram.com/wearyband/"
       label="@wearyband"
     />
-    {wearyPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="weary-side" />
+    <PhotoSection {gallery} id="weary-christopher-side" />
+    <PhotoSection {gallery} id="weary-christopher-front" />
+    <PhotoSection {gallery} id="weary-kate-front" />
+    <PhotoSection {gallery} id="weary-meg" />
+    <PhotoSection {gallery} id="weary-front" />
 
     <ArtistCard
       {gallery}
@@ -227,7 +190,11 @@ const wallpaperUrl = mediaFileUrl(gallery, wallpaper);
         <GalleryImage {gallery} id="planes-nick" class="short" />
       </div>
     </section>
-    {planesClosingPhotos.map((id) => <PhotoSection {gallery} {id} />)}
+    <PhotoSection {gallery} id="planes-front" />
+    <PhotoSection {gallery} id="planes-side" />
+    <PhotoSection {gallery} id="planes-nick-alt" />
+    <PhotoSection {gallery} id="planes-james-sing-front" />
+    <PhotoSection {gallery} id="planes-side-alt" />
 
     <ArtistCard
       {gallery}
